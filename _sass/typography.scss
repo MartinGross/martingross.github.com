@@ -111,14 +111,7 @@ blockquote {
 // Paragraphs
 // --------------------------------------------------
 p {
-	margin: 0 0 $indent-var;
-	// sibling indentation
-  @if $paragraph-indent == true {
-    & + p {
-			text-indent: $indent-var;
-			margin-top: -($indent-var);
-		}
-	}
+	margin-top: 1.3rem ;
 }
 
 // Code
@@ -143,4 +136,9 @@ pre {
 	@include font-rem(12);
 	line-height: 1.5;
 	overflow-x: auto;
+}
+
+nav a {
+  color: lighten($link-color, 20);
+  font-weight: 300;
 }

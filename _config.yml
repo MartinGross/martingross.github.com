@@ -1,6 +1,6 @@
 # Site wide configuration
 
-title:            Site Title
+title:            DATA ZOO
 locale:           en_US
 url:              http://localhost:4000
 
@@ -26,12 +26,12 @@ kramdown:
 
 # Site owner
 owner:
-  name: Your Name
-  avatar: bio-photo.jpg
-  bio: "Describe your self."
+  name: Martin Gross
+  avatar: MG_Profilbild.jpg
+  bio: "Software Engineer, founder and father."
   email: 
   disqus-shortname: 
-  twitter: #username
+  twitter: MartinGross
   facebook: #username
   google:
     plus: #username
@@ -40,9 +40,9 @@ owner:
     ad-client: 
     ad-slot: 
   bing-verify: 
-  github: #username
+  github: MartinGross
   stackoverflow: #http://stackoverflow.com/users/123456/username
-  linkedin: #username
+  linkedin: martingrossfluxum
   instagram: #username
   lastfm: #username
   tumblr: #username
