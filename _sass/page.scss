@@ -310,10 +310,12 @@ $button-size: 1.5rem;
 .article-author-bottom {
 	h3 {
 		margin-bottom: 0;
+        font-size: 1.25rem;
 	}
 	p {
 		font-size: 80%;
 		font-style: italic;
+        margin-top: 1rem;
 	}
 	a, a:hover {
 		border-bottom: 0 solid transparent;
