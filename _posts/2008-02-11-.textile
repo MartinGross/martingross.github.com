@@ -14,7 +14,7 @@ The plug-ins must be declared inside the pom.xml file of your project. For the f
 
 "AAR Plug-in":http://ws.apache.org/axis2/tools/1_3/maven-plugins/maven-aar-plugin.html : Generates an Axis 2 service file (AAR file). This one was quite easy. Just setting the filesets was needed. As I had one WSDL and 2 related XSD files I had to set them to explicitly copy them to META-INF:
 
-<pre><code>
+{% highlight xml %}
 ...
             <plugin>
                 <groupId>org.apache.axis2</groupId>
@@ -48,13 +48,13 @@ The plug-ins must be declared inside the pom.xml file of your project. For the f
                 </executions>
             </plugin>
 ...
-</code></pre>
+{% endhighlight %}
 
 The "WSDL2Code Plug-in":http://ws.apache.org/axis2/tools/1_3/maven-plugins/maven-wsdl2code-plugin.html takes as input a WSDL and generates client and server stubs for calling or implementing a Web service matching the WSDL.
 
 This plug-in caused some problems when used as described on the "official plug-in guide page":http://ws.apache.org/axis2/tools/1_3/maven-plugins/maven-wsdl2code-plugin.html . The guide provides the following snippet:
 
-<pre><code>
+{% highlight xml %}
     <build>
     	<plugins>
     		<plugin>
@@ -73,9 +73,11 @@ This plug-in caused some problems when used as described on the "official plug-i
     		</plugin>
     	</plugins>
     </build>
-</code></pre>
+{% endhighlight %}
 
 When invoking directly as recommended with <br/><code>mvn wsdl2code:wsdl2code</code> <br/>I got an build error:
+
+
 <pre><code>
 [INFO] Scanning for projects...
 [INFO] Searching repository for plugin with prefix: 'wsdl2code'.
@@ -122,23 +124,24 @@ java.lang.NoClassDefFoundError: javax/wsdl/WSDLException
 
 Changing the group id from 'org.apache.axis2.maven2' to 'org.apache.axis2' and setting the version number explicitely to 1.3 like the following solves this problem, too:
 
-<pre><code>
+{% highlight xml %}
 ...
 <groupId>org.apache.axis2</groupId>
 <artifactId>axis2-wsdl2code-maven-plugin</artifactId>
 <version>1.3</version>
 ...
-</code></pre>
+{% endhighlight %}
 
 The description how to configure the plug-in is a bit unclear as it says you should set the paramters from the command line. But with Maven the configuration is done inside the enclosing configuration tags. I.e. for each configuration parameter you create an own XML tag. For example for databinding and packagename params you would add the following tags:
 
-<pre><code>
+
+{% highlight xml %}
 ...
 <configuration>
 <databindingName>xmlbeans</databindingName>
 <packageName>your.pkg.name.here</packageName>
 </configuration>
 ...
-</code></pre>
+{% endhighlight %}
 
 With this in mind "WSDL to Code" and AAR packaging for Axis 2 can be integrated smoothly into Maven.
