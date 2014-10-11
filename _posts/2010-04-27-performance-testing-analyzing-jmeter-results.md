@@ -8,11 +8,11 @@ categories:
 - performance-testing
 - jmeter
 ---
-h2. JMeter Test results
+## JMeter Test results
 
 !http://www.datazoo.de/images/7.jpg!
 
-"JMeter":http://jakarta.apache.org/jmeter/ uses so called "listeners":http://jakarta.apache.org/jmeter/usermanual/listeners.html to record the results of test runs. JMeter is able to display the results as tables or graphs and - even better for later analysis - to write them to a log file. 
+[JMeter](http://jakarta.apache.org/jmeter/) uses so called [listeners](http://jakarta.apache.org/jmeter/usermanual/listeners.html) to record the results of test runs. JMeter is able to display the results as tables or graphs and - even better for later analysis - to write them to a log file. 
 
 That's what we do here. We let JMeter write the results to a file. The results of the test run consist of many samples. Each sample describes which test step ran, when did it start, how long did it take and what the response of the test case was. 
 
@@ -20,13 +20,15 @@ JMeter can be configured to save the results in different formats. I chose XML f
 
 The XML format looks similar to this: 
 
-bc. <?xml version="1.0" encoding="UTF-8"?>
+{% highlight xml %}
+<?xml version="1.0" encoding="UTF-8"?>
 <testResults version="1.2">
 <httpSample t="1392" lt="351" ts="1144371014619" s="true" 
      lb="Log on" rc="200" rm="OK" 
      tn="Listen 1-1" dt="text" de="iso-8859-1" by="12407"/>
+{% endhighlight %}
 
-This appears to be quite cryptic but it isn't. The attributes are just shortend and have the following meaning
+This appears to be quite cryptic but it isn't. The attributes are just shortened and have the following meaning
 
 |by:|Bytes|
 |de:|Data encoding|
@@ -40,7 +42,7 @@ This appears to be quite cryptic but it isn't. The attributes are just shortend 
 |tn:|Thread Name|
 |ts:|timeStamp (milliseconds since midnight Jan 1, 1970 UTC)|
 
-h2. Test results as graphs
+## Test results as graphs
 
 Analyzing the log file manually ain't the most efficient way to get some insight how your application performs if you have a lot of samples. Graphs are much better at visualizing data. Unfortunately, the capabilities of JMeter to produce graphs are very limited and didn't help at all for my long running load tests: The lines of the graph were overwriting itself for a long running test and there are almost no possibilities to adjust the graph to your needs.
 
@@ -48,19 +50,19 @@ See below an example of a JMeter graph from the JMeter manual:
 
 !http://www.datazoo.de/images/6.png!
 
-h2. Using a graphing utility for diagrams 
+## Using a graphing utility for diagrams 
 
-"GnuPlot":http://www.gnuplot.info/ is a command-line driven graphing tool which I already used several times for this purpose and it is "very flexible and powerful":http://gnuplot.sourceforge.net/demo_4.4/ . Some people might want to use Excel for creating the graphs but it had in my case too many limitations. GnuPlot has the advantage of being open source, is available on many operating systems and can be automated to generate graphics.
+[GnuPlot](http://www.gnuplot.info/) is a command-line driven graphing tool which I already used several times for this purpose and it is [very flexible and powerful](http://gnuplot.sourceforge.net/demo_4.4/) . Some people might want to use Excel for creating the graphs but it had in my case too many limitations. GnuPlot has the advantage of being open source, is available on many operating systems and can be automated to generate graphics.
 
-h2. Preparing the data for graphing
+## Preparing the data for graphing
 
 GnuPlot needs the data in format that it can understand. That means I need to extract the data from the log file and convert it in a format that GnuPlot can read. 
 
-There are several ways to do this. I decided to write a Ruby script for data extraction. "Ruby":http://www.ruby-lang.org/en/ is with its "built-in regular expression":http://www.regular-expressions.info/ruby.html capabilities a very good fit for text file parsing. and I wrote a small script which extracts the values I need and writes them to another file which can be read by GnuPlot.
+There are several ways to do this. I decided to write a Ruby script for data extraction. [Ruby](http://www.ruby-lang.org/en/) is with its [built-in regular expression](http://www.regular-expressions.info/ruby.html) capabilities a very good fit for text file parsing. and I wrote a small script which extracts the values I need and writes them to another file which can be read by GnuPlot.
 
 Performance testing implies that we are measuring time. Time it takes until we get a response from our server in this case. The JMeter log files contains two different values for the response time: Elapsed Time and Latency
 
-From the "JMeter glossary":http://jakarta.apache.org/jmeter/usermanual/glossary.html :
+From the [JMeter glossary](http://jakarta.apache.org/jmeter/usermanual/glossary.html) :
 
 *Elapsed time*
  
@@ -101,11 +103,13 @@ What is still missing:
 
 The script code and some example diagrams will follow in one of my next blog articles.
 
+
 ---
 
 *Do you want to be informed when new JMeter articles will be published?*
 
-"*Sign up for my free newsletter!*":http://eepurl.com/dbZp-/
+<a markdown="0" href="http://eepurl.com/dbZp-/" class="btn">Sign up for my free newsletter!</a>
+
 
 
 

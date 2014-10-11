@@ -1,8 +1,8 @@
 ---
 layout: page
-title: About the Theme
-tags: [about, Jekyll, theme, responsive]
-modified: 2014-08-08T20:53:07.573882-04:00
+title: About me
+tags: [about, Martin Gross]
+modified: 2014-10-12
 comments: false
 image:
   feature: texture-feature-02.jpg
@@ -10,16 +10,22 @@ image:
   creditlink: http://texturelovers.com
 ---
 
-Minimal Mistakes is responsive Jekyll theme with large featured images and solid typography. As the name implies the styling is fairly minimal to make it easier for you to build on top of.
+I am working in the following areas
 
-## Minimal Mistakes is all about:
+* Software development and architecture with Java, JEE, web applications, Ruby / JRuby and web services including security
+* Solution and Delivery Management
+* Project Management for Software Development
+* Improvement of Software Development Processes for higher productivity and better quality
 
-* Responsive templates. Looking good on mobile, tablet, and desktop.
-* Gracefully degrading in older browsers. Compatible with Internet Explorer 8+ and all modern browsers. 
-* Minimal embellishments -- content first.
-* Optional large feature images for posts and pages.
-* Simple and clear permalink structure.
-* [Custom 404 page](http://mmistakes.github.io/minimal-mistakes/404.html) to get you started.
-* Support for Disqus Comments
 
-<a markdown="0" href="{{ site.url }}/theme-setup" class="btn">Install Minimal Mistakes Theme</a>
+Ich arbeite in den folgenden Bereichen 
+
+* Software-Entwickler und Software-Architekt mit den Schwerpunkten Java, JEE, [Web-Anwendungen](http://de.wikipedia.org/wiki/Webanwendung) , [Ruby](http://www.ruby-lang.org/en/) / [JRuby](http://jruby.codehaus.org/) und [Web Services](http://en.wikipedia.org/wiki/Web_service) inklusive [Security](http://en.wikipedia.org/wiki/WS-Security)
+* Solution und Delivery Management 
+* Projektmanagement für Softwareentwicklung
+* Verbesserung von Softwareentwicklungs-Prozessen, die die Produktivität der Softwareentwickler erhöhen und die Qualität der erstellten Software verbessern
+
+
+
+
+
