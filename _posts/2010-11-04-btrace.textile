@@ -1,0 +1,82 @@
+--- 
+layout: post
+title: BTrace
+date: 2010-11-04 18:01:36 +01:00
+permalink: /articles/173/btrace
+comments: true
+categories: 
+- Java
+- performance-testing
+---
+You can think of BTrace as a scriptable debugger or logger: you set breakpoints and when your breakpoints are hit some script gets executed:
+
+# It is a dynamic tracing tool for Java.
+# It instruments classes of a running Java program.
+# BTrace inserts tracing actions into the classes of a running Java program.
+
+This means you can inject tracing into an already running java program. No changes to the source code of your program are needed. No additional jars need to be loaded by your program. 
+
+The scripting is done in Java and no compilation step is needed. See the example below.
+
+The btrace download is available "here":http://kenai.com/projects/btrace/ .
+
+The user guide is "here":http://kenai.com/projects/btrace/pages/UserGuide .
+
+h4. How to use it
+
+Let's assume we want to get a notification every time a thread is started.
+
+Now let's create the tracing script i.e. java class. Create a java class named BTraceThread.java:
+
+{% highlight java %}
+ import com.sun.btrace.annotations.*;
+ import static com.sun.btrace.BTraceUtils.*;
+
+ ==@BTrace==
+ public class BTraceThread {
+
+     // ==@OnMethod annotation tells where to probe.==
+     // In this example, we are interested in entry 
+     // into the Thread.start() method. 
+     @OnMethod(
+         clazz="java.lang.Thread",
+         method="start"
+     )
+
+     public static void func() {
+         // println is defined in BTraceUtils
+         // you can only call the static methods of BTraceUtils
+         println("about to start a thread!");
+    }
+ }
+{% endhighlight %}
+
+If it ain't running already, start the program that shall be traced. I'll use "JRuby":http://jruby.org/ "IRB":http://docs.codehaus.org/display/JRUBY/The+JRuby+Tutorial+Part+1.5+-+Using+JIRB+to+Check+Java+Behaviour to start some threads interactively.
+
+We need now the pid of the IRB. Find the already running Java programms with 
+@jps -l@
+
+Which returned on my machine:
+@17404 org.jruby.Main@
+
+Which means we got 17404 as the pid of our programm.
+
+Now run your btrace script with:
+@btrace 17404 BTraceThread.java@
+
+Everything is in place now. Let's start some threads using JRuby IRB:
+@t = Thread.new do puts "New thread started at #{Time.now}" end@
+
+Everytime a new thread starts you should see 'about to start a thread!' .
+
+<pre>
+D:\>C:\Programme\Java\btrace\bin\btrace 17404 BTraceThread.java
+about to start a thread!
+about to start a thread!
+about to start a thread!
+about to start a thread!
+about to start a thread!
+about to start a thread!
+about to start a thread!
+about to start a thread!
+</pre>

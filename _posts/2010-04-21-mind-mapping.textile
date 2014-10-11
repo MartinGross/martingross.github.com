@@ -1,0 +1,16 @@
+--- 
+layout: post
+title: Mind Mapping
+date: 2010-04-21 17:18:49 +02:00
+permalink: /articles/157/mind-mapping
+comments: true
+categories: 
+- Usability
+- Utilities
+---
+"FreeMind":http://freemind.sourceforge.net/wiki/index.php/Main_Page ist meiner Meinung eines der besten Mind Mapping Tools. Es läuft auf allen wichtigen Betriebssystemen, exportiert PDF und SVG, ist OpenSource. 
+
+Und macht vor allem nicht zuviel und nicht zu wenig: Gerade beim Mind Mapping möchte ich mich nicht von meinen eigentlichen Gedanken durch die Bedienung der Software ablenken lassen.
+
+  
+!http://www.datazoo.de/images/5.png!

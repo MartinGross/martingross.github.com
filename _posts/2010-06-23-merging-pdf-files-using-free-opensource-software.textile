@@ -1,0 +1,18 @@
+--- 
+layout: post
+title: Merging PDF files using free opensource software
+date: 2010-06-23 16:00:16 +02:00
+permalink: /articles/164/merging-pdf-files-using-free-opensource-software
+comments: true
+categories: 
+- Utilities
+---
+Using "PDFCreator":http://sourceforge.net/projects/pdfcreator/ you can merge any number of different file types, including (parts of) PDF files, into one PDF.
+
+PDFCreator is a Windows tool that can be used like a printer.
+
+bq. ??"When printing anything to PDFCreator ... On the bottom of that window you'll find several buttons: Cancel, Waiting, Options, eMail and Save. Most of these buttons don't need further explanation, but the power of one of them may easily be overseen: the marvellous Waiting-button."??
+
+bq. ??"Clicking the Waiting-button opens the main window of PDFCreator. ... PDFCreator will wait for you to add another 'print' job, for you to change the order of the existing jobs, or for you - here comes the magic word - to combine existing jobs. As soon as you're ready adding, changing order and combining jobs, click one to select it for 'printing' and choose Print from the Document menu or press Ctrl+P. The old familiar window will reappear, and clicking Save will then bring up a window asking for a name and location to save your new PDF file."??
+
+Found at "http://arjenvankol.com/freeware-pdf.php":http://arjenvankol.com/freeware-pdf.php

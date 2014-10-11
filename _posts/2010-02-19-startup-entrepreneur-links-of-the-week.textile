@@ -1,0 +1,11 @@
+--- 
+layout: post
+title: Startup Entrepreneur Links of the Week
+date: 2010-02-19 15:09:04 +01:00
+permalink: /articles/151/startup-entrepreneur-links-of-the-week
+comments: true
+categories: 
+- Entrepreneur
+- Business
+---
+"Indicators that you should take VC money":http://www.joelonsoftware.com/items/2010/02/14.html

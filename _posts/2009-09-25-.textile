@@ -1,0 +1,11 @@
+--- 
+layout: post
+title: JRuby
+date: 2009-09-25 19:13:04 +02:00
+permalink: /articles/145/
+comments: true
+categories: 
+- JRuby
+- Java
+---
+Compiler Ruby script to a Java .class file: jruby -S jrubyc start.rb

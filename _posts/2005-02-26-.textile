@@ -1,0 +1,22 @@
+--- 
+layout: post
+title: Threads und JUnit
+date: 2005-02-26 18:26:29 +01:00
+permalink: /articles/49/
+comments: true
+categories: 
+- Software-Entwicklung
+- Java
+---
+Wenn man Klassen mit JUnit testen will, die in einem eigenem Thread laufen, hat man ein Problem. Diese Tests werden nicht komplett ausgeführt. 
+
+TestCase nimmt an, das der Testfall beendet ist, sobald der Aufruf der Methode run() des Threads beendet wurde. Der Thread läuft allerdings im allgemeinen noch weiter. D.h. der Test wird dann nicht komplett durchgeführt.
+
+Um zu erreichen, dass der Test bzw. der Thread komplett ausgeführt wird, kann man join() aufrufen.
+
+{% highlight java %}
+Thread t = service.sendNewsletter(2, testUser);
+// wait for the end of the thread, otherwise JUnit terminates the tests to early
+t.join();
+{% endhighlight %}
+

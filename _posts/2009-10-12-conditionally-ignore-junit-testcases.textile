@@ -1,0 +1,22 @@
+--- 
+layout: post
+title: Conditionally ignore JUnit TestCases
+date: 2009-10-12 16:57:00 +02:00
+permalink: /articles/147/conditionally-ignore-junit-testcases
+comments: true
+categories: 
+- Java
+- Software-Entwicklung
+---
+@Ignore is one of the useful annotations of "JUnit 4":http://www.junit.org/ and above. If you put this in front of a test method it will be ignored and the test results show that the test was not run but ignored or skipped.
+
+e.g.
+Tests run: 7, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.052 sec
+
+But sometimes you want to decide during runtime if a test should be ignored. For example if a database is not available, you don't want to run a test which depends on the database. The annotation doesn't help here. You would need to set it manually. Wrapping an if-check for the database around the method body will help you to avoid a test failure. But it will show the test passed, lulling you into a false sense of security.
+
+What you really want is an ignored test. That's where "Assume":http://junit.org/apidocs/org/junit/Assume.html helps:
+
+bq. "A set of methods useful for stating assumptions about the conditions in which a test is meaningful. A failed assumption does not mean the code is broken, but that the test provides no useful information. The default JUnit runner treats tests with failing assumptions as ignored."
+
+Unfortunately most of the test runners I use (Intellij Idea 7.0 and Maven 2.0.8) don't show it as ignored but as passed. Hopefully it is just a matter of time until it is fixed there as well.

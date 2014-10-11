@@ -1,0 +1,10 @@
+--- 
+layout: post
+title: Dem Schachprogramm beim Denken zuschauen
+date: 2005-12-27 01:34:12 +01:00
+permalink: /articles/74/
+comments: true
+categories: 
+- verschiedenes
+---
+... kann man bei "Thinking Machines":http://turbulence.org/spotlight/thinking/chess.html

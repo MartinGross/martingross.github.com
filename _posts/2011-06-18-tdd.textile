@@ -1,0 +1,14 @@
+--- 
+layout: post
+title: Why does Test Driven Development matter?
+date: 2011-06-18 13:50:18 +02:00
+permalink: /articles/177/tdd
+comments: true
+categories: 
+- software-testing
+---
+An excellent Talk by Robert Martin called "What Killed Smalltalk Could Kill Ruby, Too" that shows why test driven development (TDD) as a concept is so important, not only for Ruby projects but for every software project.  
+
+The TDD relevant part starts at "23m 56s":http://youtu.be/YX3iRjKj7C0?t=23m56s .
+
+<iframe width="560" height="349" src="http://www.youtube.com/embed/YX3iRjKj7C0" frameborder="0" allowfullscreen></iframe>

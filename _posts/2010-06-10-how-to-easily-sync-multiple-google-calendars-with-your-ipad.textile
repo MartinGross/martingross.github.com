@@ -1,0 +1,36 @@
+--- 
+layout: post
+title: How to easily sync multiple Google calendars with your iPad
+date: 2010-06-10 11:22:06 +02:00
+permalink: /articles/161/how-to-easily-sync-multiple-google-calendars-with-your-ipad
+comments: true
+categories: 
+- Web
+- Utilities
+---
+Add account
+1. Tap the Settings on your iPad's home screen.
+2. Tap Mail, Contacts, Calendars.
+3. Tap Add Account....
+4. Select Microsoft Exchange.
+
+Enter Your Account Info
+5. In the Email field, enter your full Google Account email address.
+If you use an @googlemail.com address, you may see an "Unable to verify certificate" warning.
+6. Leave the Domain field blank.
+7. Enter your full Google Account email address as the Username and your Google Account password.
+8. Tap Next at the top of the screen. Choose Cancel if the Unable to Verify Certificate dialog appears.
+9. Enter m.google.com in the new Server field.
+10. Tap Next at the top of the screen again.
+11. Choose the Google Calendar services to sync.
+To delete all the existing Calendars on your iPad, uncheck the "Keep on my iPhone" option.
+12. Synchronization will begin automatically if you have Push enabled on your device. Wait seconds to start a sync for the default calendar.
+
+Enable Google multiple calendars
+13. Goto http://www.google.com/calendar/iphoneselect. Login if required.
+14. A web page opens with checkboxes for each of your calendars.
+15. Select your calendars for sync'ing. DONE!
+
+Thanks to "http://apple-ipad-tablet-help.blogspot.com/2010/03/how-to-sync-google-calendar-with-ipad.html 
+":http://apple-ipad-tablet-help.blogspot.com/2010/03/how-to-sync-google-calendar-with-ipad.html 
+ for describing the first steps.
