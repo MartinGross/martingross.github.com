@@ -1,0 +1,18 @@
+--- 
+layout: post
+title: "Die Sprache von Skype in Englisch \xC3\xA4ndern auf einem deutschem Mac OSX"
+date: 2010-11-06 13:27:32 +01:00
+permalink: /articles/174/die-sprache-von-skype-in-englisch-aendern-auf-einem-deutschem-mac-osx
+comments: true
+categories: 
+- verschiedenes
+---
+# Skype beenden, falls es läuft
+# Den Finder öffnen, Programme in der linken Seitenleiste auswählen
+# Skype im Finder auswählen, Rechtsklick, Paketinhalt zeigen
+# Es öffnet sich ein neues Finder Fenster mit mehreren Verzeichnissen
+# Das Verzeichnis Resources öffnen und nach einem Verzeichnis mit dem Namen _de.lproj_ suchen. Dieses einfach umbennen oder löschen.
+# Skype starten
+
+Hintergrund: Applikationen speichern meist ihre Anpassungen an andere Sprachen in eigenen Verzeichnissen. Ein Verzeichnis mit dem Namen _de.lproj_ deutet auf eine deutsche Anpassung hin. Wenn die Applikation diese Sprachdateien nicht mehr findet, nimmt sie die Standardsprachversion, hier also Englisch. 
+ 

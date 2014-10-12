@@ -1,0 +1,10 @@
+--- 
+layout: post
+title: Best Practive with ANT
+date: 2005-07-11 17:38:26 +02:00
+permalink: /article/58/
+comments: true
+categories: 
+- Java
+---
+"ANT in Anger":http://ant.apache.org/ant_in_anger.html

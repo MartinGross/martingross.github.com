@@ -1,0 +1,15 @@
+--- 
+layout: post
+title: Textpattern Resources
+date: 2005-08-08 19:27:08 +02:00
+permalink: /article/64/
+comments: true
+categories: 
+- Blogging
+---
+Inzwischen gibt es einige neue Anlaufstellen rund um Textpattern (zusÃ¤tzlich zu den schon "frÃ¼her genannten":article/2/die-w252rfel-sind-gefallen ) :
+
+"http://textpattern.kbbu.de/":http://textpattern.kbbu.de/
+"http://txpmagazine.kbbu.de/":http://txpmagazine.kbbu.de/
+"http://textgarden.org/":http://textgarden.org/
+"http://textpattern.org/":http://textpattern.org/

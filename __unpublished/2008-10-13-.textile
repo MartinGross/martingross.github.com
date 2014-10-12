@@ -1,0 +1,27 @@
+--- 
+layout: post
+title: Mozilla Prism und Proxy
+date: 2008-10-13 11:55:00 +02:00
+permalink: /article/124/
+comments: true
+categories: 
+- Firefox
+- Web
+---
+Wie in "Web Apps ohne Browser Interface":http://www.datazoo.de/article/123/web-apps-ohne-browser-interface beschrieben, benutze ich Prism fÃ¼r einige Webanwendungen. Dazu gibt eis ein praktisches Add-On fÃ¼r Firefox, das aus einer Webseite heraus, das Erstellen bzw. Konfigurieren einer Prism Anwendung erlaubt, nÃ¤mlich "Prism for Firefox":https://addons.mozilla.org/en-US/firefox/addon/6665 .
+
+Nun stellte sich leider heraus, dass die Voreinstellungen von Firefox fÃ¼r den Proxy nicht automatisch von Prism Ã¼bernommen werden. Nach viel Suchen und Probieren kam ich endlich an die richtige Konfig-Datei. Die Einstellungen sind gut versteckt in der Datei preferences.js unterhalb des Installationsverzeichnisses des Add-Ons versteckt:
+
+<code>
+.../Anwendungsdaten/Mozilla/Firefox/Profiles/(dein_profil)/extensions/refractor@developer.mozilla.org/prism/extensions/prism-runtime@developer.mozilla.org/defaults/preferences/preferences.js
+</code>
+
+Dort kann man dann die Einstellungen manuell mit einem Editor vornehmen.
+
+z.B. fÃ¼gt man folgendes hinzu:
+<pre name="code" class="js:nocontrols">
+pref("network.proxy.autoconfig_url", "http://inetprox.abcfirma.de/proxy.pac");
+pref("network.proxy.type", 2);
+</pre>
+
+Benutzerfreundlich ist das nicht wirklich. Warum kann das Plugin das nicht von Firefox mitÃ¼bernehmen?

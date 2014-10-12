@@ -1,0 +1,11 @@
+--- 
+layout: post
+title: Deutsche Ruby Seiten
+date: 2005-08-18 12:10:46 +02:00
+permalink: /article/66/
+comments: true
+categories: 
+- JRuby
+---
+* "Ruby Foren":http://www.rubyforen.de/
+* "Rubywiki":http://rubywiki.de/wiki/Hauptseite

@@ -1,0 +1,14 @@
+--- 
+layout: post
+title: Installer f&#252;r Java
+date: 2004-10-24 14:25:00 +02:00
+permalink: /article/43/
+comments: true
+categories: 
+- Java
+---
+Ein plattformÃ¼bergreifender Installer fÃ¼r Java-Applikationen:
+
+bq. IzPack is an installers generator for the Java platform. It produces lightweight installers that can be run on any operating system where a Java virtual machine is available. Depending on the operating system, it can be launched by a double-click or a simple 'java -jar installer.jar' on a shell. The most common use is to distribute applications for the Java platform, but you can also use it for other kinds of projects.
+
+Hier zu finden: "IzPack":http://izforge.com/izpack/

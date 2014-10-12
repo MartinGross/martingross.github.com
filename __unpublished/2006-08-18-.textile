@@ -1,0 +1,12 @@
+--- 
+layout: post
+title: Unterhaltung zum Wochenende
+date: 2006-08-18 15:22:00 +02:00
+permalink: /article/93/
+comments: true
+categories: 
+- verschiedenes
+---
+"Handgemachte Animation mit einem Leuchtstift":http://dailydiy.com/2006/08/01/animated-light-pen-art/
+
+"Tanzen auf dem Laufband":http://www.youtube.com/watch?v=pv5zWaTEVkI

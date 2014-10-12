@@ -1,0 +1,15 @@
+--- 
+layout: post
+title: Ruby Tutorials
+date: 2005-08-19 20:42:37 +02:00
+permalink: /article/67/
+comments: true
+categories: 
+- JRuby
+- Software-Entwicklung
+---
+Her are some Ruby tutorials I've found:
+* " Unofficial Ruby Usage Guide":http://www.caliban.org/ruby/rubyguide.shtml
+* "Ruby user's guide":http://www.ruby-doc.org/docs/UsersGuide/rg/
+* "why's (poignant) guide to ruby":http://www.poignantguide.net/ruby/
+* "Programming Ruby (the book)":http://www.whytheluckystiff.net/ruby/pickaxe/

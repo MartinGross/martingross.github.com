@@ -1,0 +1,53 @@
+--- 
+layout: post
+title: Struts und das Spring Framework
+date: 2004-09-19 08:51:00 +02:00
+permalink: /article/42/
+comments: true
+categories: 
+- Struts
+- Java
+---
+Um die Vorteile des "Spring-Frameworks":http://www.springframework.org/ (wie z.B. Inversion of Control, loose coupling, ...) innerhalb von Struts-Applikationen nutzen zu kÃ¶nnen, bietet es sich an das entsprechende Plugin zu nutzen. Dazu bindet man 
+
+<code><plug-in className="org.springframework.web.struts.ContextLoaderPlugIn"/></code> 
+
+in struts-config.xml ein.
+
+Jetzt benÃ¶tigt man noch die Dateien action-servlet.xml und applicationContext.xml, die beide im Verzeichnis WEB-INF abgelegt werden.
+
+FÃ¼r jede Action, die Spring nutzen soll, muss das action mapping so gestaltet sein, dass org.springframework.web.struts.DelegatingActionProxy als type verwendet wird.  FÃ¼r jeder diese Actions muss dann in action-servlet.xml ein Bean definiert werden, dessen Name dem Pfad der Action entspricht.
+
+Nachvollziehbarer wird das Ganze, wenn man es an einem Beispiel aus der ursprÃ¼nglichen Dokumentation des Plugin demonstriert. Wenn man innerhalb einer Action z.B. eine Instanz einer UserDatabase benÃ¶tigte, wÃ¼rde in der struts-config.xml folgendes stehen:
+
+<pre><code>
+<action path="/logon" type="org.springframework.web.struts.DelegatingActionProxy">  
+    <forward name="success" path="/logon.jsp"/>
+/action>
+</code></pre>
+
+Und in action-servlet.xml wÃ¼rde dann folgendes stehen:
+
+<pre><code>
+<bean id="userDatabase" class="org.apache.struts.webapp.example.memory.MemoryUserDatabase" destroy-method="close" />
+    <bean name="/logon" class="org.apache.struts.webapp.example.LogonAction">
+      <property name="userDatabase"><ref bean="userDatabase" /></property>
+</bean>
+</code></pre>
+
+Die Struts Action org.apache.struts.webapp.example.LogonAction erhÃ¤lt automatisch eine Referenz auf UserDatabase einfach dadurch, dass sie eine Set-Methode 'setUserDatabase' bereitstellt:
+
+<pre><code>
+private UserDatabase database = null;
+public void setUserDatabase(UserDatabase database) {
+        this.database = database;
+}
+</code></pre>
+
+D.h. man erhÃ¤lt eine optimale Konfigurierbarkeit von Web-Applikationen.
+
+WeiterfÃ¼hrende Informationen:
+* "Wiring Your Web Application with Open Source Java":http://www.onjava.com/pub/a/onjava/2004/04/07/wiringwebapps.html?page=1
+* "Recommendations for Struts+Spring":http://jroller.com/page/raible?anchor=recommendations_for_struts_spring
+* "ContextLoaderPlugIn":http://www.springframework.org/docs/api/org/springframework/web/struts/ContextLoaderPlugIn.html
+* "UrsprÃ¼ngliche Doku zum ContextLoaderPlugIn":http://struts.sourceforge.net/struts-spring/

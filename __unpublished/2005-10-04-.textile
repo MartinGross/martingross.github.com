@@ -1,0 +1,31 @@
+--- 
+layout: post
+title: Subversion als Service unter Windows
+date: 2005-10-04 00:28:00 +02:00
+permalink: /article/70/
+comments: true
+categories: 
+- Software-Entwicklung
+---
+Um Subversion bzw. svnserve unter Windows als Dienst bereitstellen zu kÃ¶nnen, braucht man etwas zusÃ¤tzliche Software ("hier zu finden":http://dark.clansoft.dk/~mbn/svnservice/).
+
+SVNService.exe kopiert man dazu in das Verzeichnis, wo auch svnserve.exe liegt. D.h. Subversion sollte schon installiert sein.
+
+Dann startet man auf der Kommandozeile:
+
+SVNService -install -d -r c:\\svnrepo
+
+(c:\\svnrepo ist der Pfad zum bereits angelegten Repository)
+
+Nun ist SVNService als Dienst registriert und man kann es Ã¼ber die Dienste-Konsole von Windows starten, beenden etc.
+
+Update: 
+Wenn man mehrere Repositories mit svnserve bereitstellen will, legt man diese einfach unterhalb eines Verzeichnisses an:
+
+Also z.B.
+c:\\svnrepo\\repo1
+c:\\svnrepo\\repo2
+
+und gibt dann das Verzeichnis c:\\svnrepo mit der -r Option an (SVNService -install -d -r c:\\svnrepo). 
+
+Die URL fÃ¼r den Zugriff heisst dann fÃ¼r das erste Repository 'svn://localhost/repo1', wenn man auf der Maschine arbeitet, wo das Repository liegt. Wenn das nicht der Fall ist, Ã¤ndert sich lediglich 'localhost' zu dem Namen der Maschine mit dem Repository.

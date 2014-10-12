@@ -1,0 +1,20 @@
+--- 
+layout: post
+title: Continuous Integration mit Cruise Control
+date: 2007-02-22 14:20:00 +01:00
+permalink: /article/100/
+comments: true
+categories: 
+- Java
+- Software-Entwicklung
+---
+"CruiseControl Website":http://cruisecontrol.sourceforge.net/
+
+"Vorteile von Continuous Integration":http://www.martinfowler.com/articles/continuousIntegration.html
+
+"QualitÃ¤tsverbesserung durch Continuous Integration":http://www.oio.de/cruisecontrol.htm
+
+"Steve McConnell zu Continuous Integration":http://www.stevemcconnell.com/ieeesoftware/bp04.htm
+
+"Eine EinfÃ¼hrung, wie man CruiseControl fÃ¼r sein Projekt aufsetzt":http://www.pragmaticprogrammer.com/starter_kit/au/scheduled.pdf
+

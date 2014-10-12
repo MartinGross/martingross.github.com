@@ -1,0 +1,15 @@
+--- 
+layout: post
+title: Tools f&#252;r Fotos
+date: 2005-07-29 22:45:00 +02:00
+permalink: /article/60/
+comments: true
+categories: 
+- Web
+- Business
+---
+Ich benutze schon eine Weile die (Windows-) Software "Picasa":http://picasa.google.com/index.html zum Sortieren und Anschauen meiner digitalen Bilder. Die ursprÃ¼ngliche Firma dahinter wurde vor einiger Zeit von Google aufgekauft. Seitdem ist sie kostenlos. Klasse Tool.
+
+Jetzt habe ich mir endlich mal "Flickr":http://www.flickr.com/ angeschaut und bin echt beeindruckt. Es ist schon faszinierend, was man mit Webapplikationen inzwischen alles machen kann. Flickr wurde von Yahoo Ã¼bernommen. 
+
+Es scheint, dass bei den Internetgiganten der groÃŸe Run auf die Foto-Applikationen ausgebrochen ist ...

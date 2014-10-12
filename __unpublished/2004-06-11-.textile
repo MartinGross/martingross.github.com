@@ -1,0 +1,54 @@
+--- 
+layout: post
+title: Bin&#228;re Dateien mit Struts ausliefern
+date: 2004-06-11 12:20:00 +02:00
+permalink: /article/31/
+comments: true
+categories: 
+- Struts
+- Software-Entwicklung
+---
+Normalerweise liefert Struts HTML (also Text) als Response auf bestimmte Aktionen aus. Ein Beispiel wÃ¤re die Darstellung von Kundendaten, die als HTML durch eine JSP(JavaServer Page) an den Browser gesendet werden.
+
+In manchen FÃ¤llen will man aber nicht nur HTML, sondern auch binÃ¤re Inhalte zurÃ¼ckliefern. Dies kÃ¶nnte zum Beispiel ein Bild sein, das auf dem Server online erzeugt wird oder auch eine Datei, die als Download ausgeliefert werden soll. 
+
+Wenn man erreichen will, dass vor dem Download beispielsweise Ã¼berprÃ¼ft wird, ob der Benutzer ausreichende Berechtigungen dafÃ¼r besitzt, wird man nicht um die Verwendung einer Action herumkommen.
+
+Der Trick dabei ist nicht an eine JSP weiterzuleiten, sondern eine Datei zurÃ¼ckzuliefern. Aussehen kann so etwas so:
+
+<code><pre>
+public ActionForward execute(ActionMapping mapping, 
+    ActionForm form, 
+    HttpServletRequest request,                             
+    HttpServletResponse response) throws Exception 
+{
+
+  // mach irgendetwas ...
+
+  // GIF zurueckliefern
+  ActionForward fileForward = new ActionForward();
+  response.addHeader("content-type", "image/gif");
+
+  String imagePath = "/images/spacer.gif";
+  fileForward.setPath( imagePath );
+  return fileForward;
+}
+</pre></code>
+
+Dabei ist es wichtig, dass auch der richtige "HTTP-Header":http://www.bolege.de/http-header/ gesendet wird. Mit <code>response.addHeader</code> wird der passende "Mime-Type":http://selfhtml.teamone.de/diverses/mimetypen.htm gesetzt.
+
+Eine "andere MÃ¶glichkeit":http://www.mail-archive.com/struts-user@jakarta.apache.org/msg16455.html ist einen Stream zu Ã¶ffnen, damit zu tun was man vorhat und anschliessend <code>null</code> zurÃ¼ckzuliefern. Aussehen kÃ¶nnte so etwas so:
+
+<code><pre>
+  response.setContentType("mytype");
+  response.setHeader("Content-disposition", "attachment;
+filename=\"myfilename.xxx\"");
+  response.addHeader("Content-description", "my description");
+  ServletOutputStream stream = response.getOutputStream();
+  //write whatever to stream
+  stream.close();
+  return null;
+</pre></code>
+
+
+Oder man macht es wie Dan Moore und schreibt einfach ein "handelsÃ¼bliches" "Servlet":http://www.mooreds.com/weblog/archives/000018.html.

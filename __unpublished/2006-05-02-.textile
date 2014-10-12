@@ -1,0 +1,10 @@
+--- 
+layout: post
+title: Dr. Dobb's Journal kostenlos
+date: 2006-05-02 17:40:36 +02:00
+permalink: /article/81/
+comments: true
+categories: 
+- Software-Entwicklung
+---
+Cool, alte und aktuelle Ausgaben von "Dr. Dobb's Journal":http://www.ddj.com/ kann man jetzt kostenlos "hier":http://www.ddj.com/resources/pdfarchive/ herunterladen.

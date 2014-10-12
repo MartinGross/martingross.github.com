@@ -1,0 +1,28 @@
+--- 
+layout: post
+title: Die Zeit f&#252;r CSS ist reif
+date: 2004-06-06 11:49:00 +02:00
+permalink: /article/5/
+comments: true
+categories: 
+- Web
+- CSS
+---
+Wenn groÃŸe Sites wie blogger.com auf CSS(Cascading Style Sheets)  umsteigen,  kann man das wahrscheinlich jetzt auch fÃ¼r kommerzielle Websites endlich mal in Angriff nehmen. Es wird auch hÃ¶chste Zeit, daÃŸ man endlich mal von dem Tabellengeschnipsel wegkommt. 
+
+Ein Layout sollte sich jetzt auch komplett in CSS erstellen lassen.  D.h. es werden nicht nur CSS Styles verwendet fÃ¼r das Aussehen von beispielsweise Ãœberschriften, sondern auch CSS Positioning fÃ¼r das Anordnen der einzelnen Bestandteile der Webseite auf dem Bildschirm.
+
+Spannend wird es aber bestimmt mit den verschiedenen Browsern. Da nicht jeder Browser die Standards schon komplett unterstÃ¼tzt.
+
+Wer hat schon Erfahrungen mit komplett CSS-basierten Websites gemacht?
+
+_Update:_
+Jeffrey Veen hat einen interessanten Artikel Ã¼ber den Wert von Web-Standards im besonderen fÃ¼r Business-Websites geschrieben. Seiner Meinung nach ergeben sich folgende Vorteile:
+
+a. Die Entwicklung wird beschleunigt
+b. Die Pflege und Aktualisierung wird vereinfacht
+c. Verbesserter Zugang
+d. Geringere DateigrÃ¶ÃŸen, weniger Bandbreite nÃ¶tig
+e. Verbesserte Usability
+
+Der komplette Artikel ist bei "Macromedia":http://www.macromedia.com/newsletters/edge/may2004/index.html?sectionIndex=5 zu finden.

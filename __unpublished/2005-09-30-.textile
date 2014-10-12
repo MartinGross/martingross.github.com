@@ -1,0 +1,21 @@
+--- 
+layout: post
+title: AJAX with JSP &#38; Struts
+date: 2005-09-30 00:23:00 +02:00
+permalink: /article/69/
+comments: true
+categories: 
+- Java
+- Web
+---
+The AJAX Tag Library is a set of JSP tags that simplify the use of Asynchronous JavaScript and XML (AJAX) technology in JavaServer Pages. It is based on "Prototype":http://prototype.conio.net/ . Documentation for Prototype can be found "here":http://blogs.ebusiness-apps.com/jordan/pages/Prototype%20Library%20Info.htm and "here":http://www.sergiopereira.com/articles/prototype.js.html .
+
+Find it here: "AJAXTags":http://ajaxtags.sourceforge.net/
+
+Update:
+Other frameworks
+* "Taconite":http://taconite.sourceforge.net/index.html
+* "Dojo":http://dojotoolkit.org/
+* "OpenRico":http://openrico.org/
+* "script.aculo.us":http://script.aculo.us/
+* "DWR: Ajax for Java":http://getahead.ltd.uk/dwr/

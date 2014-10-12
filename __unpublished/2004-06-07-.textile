@@ -1,0 +1,14 @@
+--- 
+layout: post
+title: Projektleitfaden Software-Ergonomie
+date: 2004-06-07 10:20:00 +02:00
+permalink: /article/28/
+comments: true
+categories: 
+- Usability
+- Software-Entwicklung
+---
+bq. Aus Sicht eines Software einsetzenden Unternehmens stehen vor allem wirtschaftliche Vorteile im Zentrum: Eine ergonomisch gestaltete Software fÃ¼hrt zu einer erhÃ¶hten ArbeitsproduktivitÃ¤t, einer geringeren Fehlerquote, hÃ¶herer Motivation der Mitarbeiter und zu geringeren Schulungs- und Betreuungskosten. Aus Sicht eines Software herstellenden Unternehmens trÃ¤gt software-ergonomische QualitÃ¤t entscheidend zur AttraktivitÃ¤t der eigenen Produkte und zur Zufriedenheit der Kunden bei und verbessert damit die eigenen Marktchancen. Aus Sicht des Benutzers kÃ¶nnen durch ergonomische Software psychische und physische Belastungen minimiert und damit vorzeitige ErmÃ¼dung sowie gesundheitliche BeeintrÃ¤chtigungen vermieden werden.
+
+Ein Leitfaden fÃ¼r die BerÃ¼cksichtigung von Ergonomie / Usability in Software-Projekten, an dem ich mitgearbeitet habe, ist bei "EVOLT":http://www.evolt.de/meta/showNews.do?artikel=Projektleitfaden+Software-Ergonomie+verf%FCgbar als Download verfÃ¼gbar.
+

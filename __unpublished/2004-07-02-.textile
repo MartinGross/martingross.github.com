@@ -1,0 +1,25 @@
+--- 
+layout: post
+title: Dreamweaver und unbekannte Dateierweiterungen (z.B. .tpl )
+date: 2004-07-02 03:22:00 +02:00
+permalink: /article/36/
+comments: true
+categories: 
+- Web
+---
+Anbei eine LÃ¶sung, wie man z.B. auch TPL-Dateien (PHP Smarty) in der WYSIWYG-Ansicht im Dreamweaver MX bearbeiten kann:
+
+Man Ã¶ffnet hierfÃ¼r die Datei "MMDocumentTypes.xml" im Verzeichnis "...\Macromedia\Dreamweaver MX\Configuration\DocumentTypes\" und fÃ¼gt in der 3. Zeile die tpl-Dateiendung hinzu.
+
+Das schaut dann ungefÃ¤hr so aus:
+<code><documenttype id="HTML" internaltype="HTML" winfileextension=" htm,html,shtml,shtm,stm,lasso,xhtml,tpl" macfileextension="html,htm,shtml,shtm,lasso,xhtml" file="Default.html" writebyteordermark="false"></code>
+
+Danach ist auch bei den tpl-Dateien die normale HTML-Code-Ansicht zu sehen und natÃ¼rlich auch eine "begrenzte"-Vorschau Ansicht...
+
+(gefunden bei "CaupoSoft":http://www.cauposoft.de/forum/showthread.php?s=&postid=8892#post8892)
+
+Um die Dateien aus dem Site Panel direkt per Klick Ã¶ffnen zu kÃ¶nnen, geht man in "Edit->Preferences->File Types / Editors" und fÃ¼gt den Extensions .tpl hinzu und wÃ¤hlt als Editor Dreamweaver aus.
+
+Wenn man das Syntax Highlighting noch optimieren mÃ¶chte bzw. ein spezielles Farbschema fÃ¼r Smarty nutzen will, findet man "hier":http://smarty.incutio.com/?page=ConfiguringDreamweaver mehr Infos.
+
+Mehr zu dem Thema Dreamweaver und Anpassung der Dateierweiterungen findet man auch bei "Macromedia":http://www.macromedia.com/support/dreamweaver/ts/documents/add_ext_mx.htm

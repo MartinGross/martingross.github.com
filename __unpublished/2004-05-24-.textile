@@ -1,0 +1,12 @@
+--- 
+layout: post
+title: Das CSS Box Modell
+date: 2004-05-24 13:03:00 +02:00
+permalink: /article/12/
+comments: true
+categories: 
+- CSS
+---
+John Hicks hat ein "3-dimensionales CSS-Boxmodell":http://www.hicksdesign.co.uk/journal/2004/05/3d_css_box_model/index.php gezeichnet, an dem man gut erkennen kann, wie margin, padding und border zusammenhÃ¤ngen.
+
+Das Ganze noch weiter getrieben und zum interaktiven Bewegen findet man bei "Douglas":http://www.redmelon.net/tstme/box_model/ .

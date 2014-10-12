@@ -1,0 +1,14 @@
+--- 
+layout: post
+title: Wie designe ich mein Blog mit TextPattern?
+date: 2004-05-21 13:37:00 +02:00
+permalink: /article/10/
+comments: true
+categories: 
+- Blogging
+---
+http://yayforgecko.net/css/yfg3.css
+
+??This is the YFG's CSS file. You can use my CSS, but my images, content, and design elements are Copyright (c) Radley Smith 2004??
+
+http://blogs.msdn.com/skins/AnotherEon001/style.css

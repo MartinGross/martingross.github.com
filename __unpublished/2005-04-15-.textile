@@ -1,0 +1,12 @@
+--- 
+layout: post
+title: GUI possibilites for web applications
+date: 2005-04-15 12:18:57 +02:00
+permalink: /article/53/
+comments: true
+categories: 
+- Software-Entwicklung
+- Web
+---
+* "Demo of DHTML effects":http://mir.aculo.us/demos/effects/demo1.html
+* "AJAX with Struts":http://www.omnytex.com/articles/xhrstruts/

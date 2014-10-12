@@ -1,0 +1,13 @@
+--- 
+layout: post
+title: Browser Cache in Firefox anschauen
+date: 2007-10-12 18:21:00 +02:00
+permalink: /article/111/
+comments: true
+categories: 
+- Web
+- Firefox
+---
+Mit Firefox kann man sich komfortable die gecachten Dateien, die im Hauptspeicher  und auf Festplatte vorgehalten werden, anschauen. Dazu gibt man einfach in die Adresszeile (da wo man sonst die URL eingibt) "about:cache":about:cache ein.
+
+Da wir gerade beim Thema sind: "about:config":about:config zeigt einem die Konfiguration von Firefox in voller Breite an. Das schöne ist, man kann nachgesuchten Einträgen filtern, da man sonst schnell von der Masse der Einträge überwältigt wird. Und mit einem rechten Mausklick kann man auch die Werte editieren.

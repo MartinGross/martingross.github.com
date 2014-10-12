@@ -1,0 +1,192 @@
+--- 
+layout: post
+title: Ruby IDE / Editor
+date: 2005-08-16 14:43:00 +02:00
+permalink: /article/65/
+comments: true
+categories: 
+- Software-Entwicklung
+- JRuby
+---
+Was fÃ¼r Ruby zur Zeit definitiv fehlt ist eine komplette IDE, die alle Anforderungen an eine moderne IDE wie z.B. Refactoring unterstÃ¼tzt. Gerade fÃ¼r Java existieren eine ganze Menge hervorragender IDEs, beispielsweise Eclipse oder Intellij IDEA, die einen Programmierer sehr gut unterstÃ¼tzen.
+
+Es gibt ein paar viel versprechende AnsÃ¤tze, die leider noch in einem recht frÃ¼hen Stadium sind:
+
+* "RDT":http://rubyeclipse.sourceforge.net/
+* "jEdit with Ruby Plugin":http://www.jedit.org/ruby/
+* "RDE":http://homepage2.nifty.com/sakazuki/rde_e.html
+* "Mondrian":http://www.mondrian-ide.com/
+* "Arachno":http://www.ruby-ide.com/ruby/ruby_ide_and_ruby_editor.php
+* "FreeRIDE":http://freeride.rubyforge.org/wiki/wiki.pl
+
+Warum gibt es eigentlich noch kein IDEA Plugin fÃ¼r Ruby? Mit dem neuen Language API sollte es mit vernÃ¼nftigen Aufwand realisierbar sein.
+
+SciTE wird bei der Windows Installation von Ruby gleich als Editor mitgeliefert und ist nicht die schlechteste Alternative. Allerdings fand ich es sehr gewÃ¶hnungsbedÃ¼rftig, dass man zum VervollstÃ¤ndigen Ctrl+Enter und nicht Ctrl+Space drÃ¼cken muss.  
+
+Um SciTE an meine Tippgewohnheiten anzupassen, habe ich nun nach langem Suchen folgendes gefunden. Man kann die Datei SciTEGlobal.properties ergÃ¤nzen und zwar muss *Ctrl+Space|IDM_COMPLETEWORD|* den *user.shortcuts* hinzufÃ¼gen plus einem Backslash in der davorliegenden Zeile. 
+
+Komplett sieht das dann ungefÃ¤hr so aus:
+<pre><code>
+user.shortcuts=\
+Ctrl+PageUp|IDM_PREVFILE|\\
+Ctrl+PageDown|IDM_NEXTFILE|\\
+Ctrl+Space|IDM_COMPLETEWORD|
+</code></pre>
+
+Die Modifiers sind Ctrl, Shift, und Alt.
+ 
+Die benannten Tasten sind Left, Right, Up, Down, Insert, End, Home, Enter, Space, KeypadPlus, KeypadMinus, Escape, Delete, PageUp, PageDown, Slash, Question, Equal
+
+Die wichtigsten Kommandos sind hier aufgelistet (dem Sourcecode von SciTE entnommen):
+
+<pre><code>
+POPUP "&File"
+BEGIN
+	MENUITEM "&New\tCtrl+N",		IDM_NEW
+	MENUITEM "&Open...\tCtrl+O",		IDM_OPEN
+	MENUITEM "Open Selected &Filename\tCtrl+Shift+O",	IDM_OPENSELECTED
+	MENUITEM "&Revert\tCtrl+R",		IDM_REVERT
+	MENUITEM "&Close\tCtrl+W",		IDM_CLOSE
+	MENUITEM "&Save\tCtrl+S",		IDM_SAVE
+	MENUITEM "Save &As...\tCtrl+Shift+S",			IDM_SAVEAS
+	MENUITEM "Save a Co&py...\tCtrl+Shift+P",			IDM_SAVEACOPY
+	POPUP "Encodin&g"
+	BEGIN
+		MENUITEM "&8 Bit",		IDM_ENCODING_DEFAULT
+		MENUITEM "UCS-2 &Big Endian",		IDM_ENCODING_UCS2BE
+		MENUITEM "UCS-2 &Little Endian",		IDM_ENCODING_UCS2LE
+		MENUITEM "&UTF-8",		IDM_ENCODING_UTF8
+		MENUITEM "UTF-8 &Cookie",		IDM_ENCODING_UCOOKIE
+	END
+	POPUP "&Export"
+	BEGIN
+		MENUITEM "As &HTML...",		IDM_SAVEASHTML
+		MENUITEM "As &RTF...",		IDM_SAVEASRTF
+		MENUITEM "As &PDF...",		IDM_SAVEASPDF
+		MENUITEM "As &LaTeX...",		IDM_SAVEASTEX
+	END
+	MENUITEM SEPARATOR
+	MENUITEM "Page Set&up...",		IDM_PRINTSETUP
+	MENUITEM "&Print...\tCtrl+P",	IDM_PRINT
+	MENUITEM SEPARATOR
+	MENUITEM "&Load Session...",		IDM_LOADSESSION
+	MENUITEM "Sa&ve Session...",		IDM_SAVESESSION
+	MENUITEM SEPARATOR
+	MENUITEM "E&xit",				IDM_QUIT
+END
+POPUP "&Edit"
+BEGIN
+	MENUITEM "&Undo\tCtrl+Z",  				IDM_UNDO
+	MENUITEM "&Redo\tCtrl+Y",  				IDM_REDO
+	MENUITEM SEPARATOR
+	MENUITEM "Cu&t\tCtrl+X",				IDM_CUT
+	MENUITEM "&Copy\tCtrl+C",				IDM_COPY
+	MENUITEM "&Paste\tCtrl+V",				IDM_PASTE
+	MENUITEM "&Delete\tDel",				IDM_CLEAR
+	MENUITEM "Select &All\tCtrl+A",			IDM_SELECTALL
+	MENUITEM "Copy as RT&F",				IDM_COPYASRTF
+	MENUITEM SEPARATOR
+	MENUITEM "&Join Text\tCTRL+T",						IDM_JOIN
+	MENUITEM "&Split Text\tCTRL+SHIFT+T",						IDM_SPLIT
+	MENUITEM SEPARATOR
+	MENUITEM "Match &Brace\tCtrl+E",			IDM_MATCHBRACE
+	MENUITEM "Select t&o Brace\tCtrl+Shift+E",	IDM_SELECTTOBRACE
+	MENUITEM "S&how Calltip\tCtrl+Shift+Space",	IDM_SHOWCALLTIP
+	MENUITEM "Complete S&ymbol\tCtrl+I",		IDM_COMPLETE
+	MENUITEM "Complete &Word\tCtrl+Enter",		IDM_COMPLETEWORD
+	MENUITEM "&Expand Abbreviation\tCtrl+B",	IDM_ABBREV
+	MENUITEM "&Insert Abbreviation\tCtrl+Shift+R",	IDM_INS_ABBREV
+	MENUITEM "Block Co&mment or Uncomment\tCtrl+Q",	IDM_BLOCK_COMMENT
+	MENUITEM "Bo&x Comment\tCtrl+Shift+B",	IDM_BOX_COMMENT
+	MENUITEM "Stream Comme&nt\tCtrl+Shift+Q",	IDM_STREAM_COMMENT
+	MENUITEM "Make &Selection Uppercase\tCtrl+Shift+U",	IDM_UPRCASE
+	MENUITEM "Make Selection &Lowercase\tCtrl+U",	IDM_LWRCASE
+END // used: abcdefghlmnoprstuwxy
+POPUP "&Search"
+BEGIN
+	MENUITEM "&Find...\tCtrl+F",				IDM_FIND
+	MENUITEM "Find &Next\tF3",				IDM_FINDNEXT
+	MENUITEM "Find Previou&s\tShift+F3",		IDM_FINDNEXTBACK
+	MENUITEM "F&ind in Files...\tCtrl+Shift+F",	IDM_FINDINFILES
+	MENUITEM "R&eplace...\tCtrl+H",			IDM_REPLACE
+	MENUITEM "Incrementa&l Search...\tCtrl+Alt+I",	IDM_INCSEARCH
+	MENUITEM SEPARATOR
+	MENUITEM "&Go to...\tCtrl+G",			IDM_GOTO
+	MENUITEM "Next Book&mark\tF2",			IDM_BOOKMARK_NEXT
+	MENUITEM "Pre&vious Bookmark\tShift+F2",	IDM_BOOKMARK_PREV
+	MENUITEM "Toggle Bookmar&k\tCtrl+F2",		IDM_BOOKMARK_TOGGLE
+	MENUITEM "&Clear All Bookmarks",			IDM_BOOKMARK_CLEARALL
+END
+POPUP "&View"
+BEGIN
+	MENUITEM "Toggle &current fold",		IDM_EXPAND
+	MENUITEM "Toggle &all folds",		IDM_TOGGLE_FOLDALL
+	MENUITEM SEPARATOR
+	MENUITEM "Full Scree&n\tF11",		IDM_FULLSCREEN
+	MENUITEM "&Tool Bar",          			IDM_VIEWTOOLBAR
+	MENUITEM "Tab &Bar",          			IDM_VIEWTABBAR
+	MENUITEM "&Status Bar",          		IDM_VIEWSTATUSBAR
+	MENUITEM SEPARATOR
+	MENUITEM "&Whitespace\tCtrl+Shift+8", 	IDM_VIEWSPACE
+	MENUITEM "&End of Line\tCtrl+Shift+9",	IDM_VIEWEOL
+	MENUITEM "&Indentation Guides", 		IDM_VIEWGUIDES
+	MENUITEM "&Line Numbers",          		IDM_LINENUMBERMARGIN
+	MENUITEM "&Margin",          			IDM_SELMARGIN
+	MENUITEM "&Fold Margin",			IDM_FOLDMARGIN
+	MENUITEM "&Output\tF8",				IDM_TOGGLEOUTPUT
+	MENUITEM "&Parameters\tShift+F8",			IDM_TOGGLEPARAMETERS
+END
+POPUP "&Tools"
+BEGIN
+	MENUITEM "&Compile\tCtrl+F7",		IDM_COMPILE
+	MENUITEM "&Build\tF7",				IDM_BUILD
+	MENUITEM "&Go\tF5",					IDM_GO
+	MENUITEM "&Stop Executing\tCtrl+Break",IDM_STOPEXECUTE
+	MENUITEM SEPARATOR
+	MENUITEM "&Next Message\tF4",		IDM_NEXTMSG
+	MENUITEM "&Previous Message\tShift+F4",IDM_PREVMSG
+	MENUITEM "Clear &Output\tShift+F5",	IDM_CLEAROUTPUT
+	MENUITEM "&Switch Pane\tCtrl+F6",	IDM_SWITCHPANE
+END
+POPUP "&Options"
+BEGIN
+	MENUITEM "&Always On Top",			IDM_ONTOP
+	MENUITEM "C&heck if already open",	IDM_CHECKIFOPEN
+	MENUITEM "Vertical &Split",			IDM_SPLITVERTICAL
+	MENUITEM "&Wrap",			IDM_WRAP
+	MENUITEM "Wrap Out&put",			IDM_WRAPOUTPUT
+	MENUITEM "&Read-Only",				IDM_READONLY
+	MENUITEM SEPARATOR
+	POPUP "&Line End Characters"
+	BEGIN
+		MENUITEM "CR &+ LF",	IDM_EOL_CRLF
+		MENUITEM "&CR",		IDM_EOL_CR
+		MENUITEM "&LF",		IDM_EOL_LF
+	END
+	MENUITEM "&Convert Line End Characters",	IDM_EOL_CONVERT
+	MENUITEM SEPARATOR
+	MENUITEM "Change Inden&tation Settings...\tCtrl+Shift+I",	IDM_TABSIZE
+	MENUITEM "Use &Monospaced Font\tCtrl+F11",	IDM_MONOFONT
+	MENUITEM SEPARATOR
+	MENUITEM "Open Local &Options File",		IDM_OPENLOCALPROPERTIES
+	MENUITEM "Open &User Options File",		IDM_OPENUSERPROPERTIES
+	MENUITEM "Open &Global Options File",		IDM_OPENGLOBALPROPERTIES
+	MENUITEM "Open A&bbreviations File",		IDM_OPENABBREVPROPERTIES
+	MENUITEM SEPARATOR
+END // used: abcghlmoprstux
+POPUP "&Language"
+BEGIN
+	MENUITEM "", IDM_LANGUAGE
+END
+POPUP "&Buffers"
+BEGIN
+	MENUITEM "&Previous\tShift+F6",			IDM_PREVFILE
+	MENUITEM "&Next\tF6",			IDM_NEXTFILE
+	MENUITEM "&Close All",				IDM_CLOSEALL
+	MENUITEM "&Save All",				IDM_SAVEALL
+END
+POPUP "&Help"
+BEGIN
+	MENUITEM "&Help\tF1", 				IDM_HELP
+END
+</code></pre>

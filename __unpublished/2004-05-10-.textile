@@ -1,0 +1,14 @@
+--- 
+layout: post
+title: Struts File Upload
+date: 2004-05-10 12:57:50 +02:00
+permalink: /articles/4/
+comments: true
+categories: 
+- Struts
+---
+Schnell kommt es zu Fehlermeldungen, wenn man per Formular Dateien hochladen will. Meist liegt es jedoch nur an trivialen GrÃ¼nden, die man aber schnell Ã¼bersieht.
+
+Beim Hochladen von Dateien sollte folgendes beachtet werden:
+* FÃ¼r das form property sollte die Klasse org.apache.struts.upload.FormFile verwendet werden und nicht String
+* es muss enctype="multipart/form-data" im Formular eingestellt sein, da es sonst zu Fehlermeldungen kommt

@@ -1,0 +1,21 @@
+--- 
+layout: post
+title: Tomcat-Apache-PHP-CGI-Desktop Integration
+date: 2005-05-11 09:57:00 +02:00
+permalink: /article/55/
+comments: true
+categories: 
+- Java
+- Web
+---
+Ein kurzes How-to wie man Tomcat 5.5 in Apache 2.0 einbindet findet man hier:
+"5 Simple Steps to Integrate Tomcat 5.5 with Apache 2.0":http://blog.taragana.com/index.php/archive/5-steps-to-integrate-tomcat-55-with-apache-20/
+
+PHP mit Tomcat:
+"Running php 5.x on windows using tomcat 4.x or 5.x":http://blog.taragana.com/index.php/archive/running-php-5x-on-windows-using-tomcat-4x-or-5x/
+
+CGI mit Tomcat:
+"Running cgi-bin on Tomcat: Simple steps & gotchas":http://blog.taragana.com/index.php/archive/running-cgi-bin-on-tomcat-simple-steps-gotchas/
+
+Tomcat auf Memorystick / Desktop:
+"Tomcat to go":http://www.javalobby.org/articles/tomcat2go/

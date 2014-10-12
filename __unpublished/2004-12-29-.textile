@@ -1,0 +1,10 @@
+--- 
+layout: post
+title: Lazlo jetzt als Open Source
+date: 2004-12-29 14:34:57 +01:00
+permalink: /article/44/
+comments: true
+categories: 
+- Software-Entwicklung
+---
+"Lazlo":http://www.laszlosystems.org/ als konkurrierendes Produkt zu Macromedias Flex ist jetzt als Open Source verfÃ¼gbar.

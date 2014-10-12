@@ -1,0 +1,18 @@
+--- 
+layout: post
+title: Vorteile von Web-Applikationen
+date: 2004-06-13 13:01:33 +02:00
+permalink: /article/32/
+comments: true
+categories: 
+- Web
+- Software-Entwicklung
+---
+Was sind Web-Applikationen: Online-Banking, eBay, ...
+
+Ãœberall verfÃ¼gbar, keine Installation notwendig, nur Browser benÃ¶tigt, Updates sofort Ã¼berall verfÃ¼gbar, viele Anwendungen nur so denkbar z.B. Fahrplanauskunft oder Online-Banking 
+
+Einbindung Externer z.B. Kunden, Lieferanten und Partner problemlos mÃ¶glich, 
+
+wichtig:
+Multi-Tier-Architekturen, offene Standards verwenden,  

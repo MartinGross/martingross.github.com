@@ -1,0 +1,17 @@
+--- 
+layout: post
+title: Manuelles Update der Virusdefinitionen f&#252;r Norton Antivirus
+date: 2006-02-26 15:21:00 +01:00
+permalink: /article/78/
+comments: true
+categories: 
+- verschiedenes
+- Web
+---
+1. Zuerst kopiert man den aktuellsten "Intelligent Updater" (z.B. 20060225-003-i32.exe) von "ftp://ftp.symantec.com/AVDEFS/norton_antivirus/":ftp://ftp.symantec.com/AVDEFS/norton_antivirus/ herunter.
+
+2. Diese .exe ist eigentlich eine selbstentpackende ZIP Datei. Man kann sie aber auch mit dem Total Commander durch die Tatenkombination "Strg-Bild runter" Ã¶ffnen. Mit anderen ZIP Entpackern sollte es Ã¤hnlich gehen. Dort findet man eine weitere Datei namens VIRSCAN.ZIP . 
+
+3. Den Inhalt dieser ZIP-Datei entpackt man mit allen Dateien nach c:\Programme\Gemeinsame Dateien\Symantec Shared\VirusDefs\incoming . Dabei sollte man darauf achten dass die Datei ZDONE.DAT als letztes kopiert wird, da sie durch ihr Vorhandensein die vollstÃ¤ndige Ãœbertragung aller Dateien signalisiert.
+
+4. Antivirus scheint dieses Verzeichnis regelmÃ¤ÃŸig zu Ã¼berprÃ¼fen und aktualisert sich dann entsprechend mit den neuen Definitionen selbst.

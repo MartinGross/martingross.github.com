@@ -1,0 +1,20 @@
+--- 
+layout: post
+title: Handy als Strichcode-Leseger&#228;t
+date: 2004-05-25 10:27:37 +02:00
+permalink: /article/14/
+comments: true
+categories: 
+- Business
+---
+Endlich mal eine pfiffige Idee fÃ¼r Kamerahandys mit Zusatznutzen:
+
+bq. Open-Source-Entwickler haben die Software 'Semacode' verÃ¶ffentlicht, die es ermÃ¶glicht, Webadressen mit einem internetfÃ¤higen Kamerahandy anzusurfen - und das, ohne die Webadresse umstÃ¤ndlich eintippen zu mÃ¼ssen.
+
+bq. Hierbei bedient sich Semacode des guten alten Strichcode-Verfahrens. Ist auf dem Handy die Semacode-Software installiert, liest das Telefon die URL per integrierter Kamera aus dem Strichcode aus und ruft die entsprechende Website auf. Der Strichcode kann aber auch Informationen wie eine Telefonnummer oder eine E-Mail-Adresse enthalten. Der DM-Strichcode (Data Matrix) besteht dabei aus einem zweidimensionalen Muster von schwarzen und weiÃŸen Quadraten und hat die GrÃ¶ÃŸe einer Briefmarke. 
+
+bq. Die Software erspare das umstÃ¤ndliche Eintippen der URLs, heiÃŸt es. FÃ¼r das Programm sei eine Vielzahl praktischer Anwendungen vorstellbar. Habe man zum Beispiel einen Bus verpasst, kÃ¶nne man per Strichcode an der Haltestelle den Busfahrplan aufrufen. Museumsbesucher kÃ¶nnten via Semacode Informationen in ihrer Sprache nachlesen.
+
+bq. GegenwÃ¤rtig ist Semacode nur fÃ¼r die Symbian-basierten Nokia-Modelle 7650, 3650 und 6600s erhÃ¤ltlich. Nach Angaben des New Scientist haben mehrere Mobiltelefon-Hersteller bereits Interesse an der Software angemeldet.
+
+Quelle: "silicon.de":http://www.silicon.de/cpo/news-mobile/detail.php?nr=14758

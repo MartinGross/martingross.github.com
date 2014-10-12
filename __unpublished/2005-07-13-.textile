@@ -1,0 +1,22 @@
+--- 
+layout: post
+title: Getting Things Done
+date: 2005-07-13 19:21:00 +02:00
+permalink: /article/59/
+comments: true
+categories: 
+- Projekt-Management
+- verschiedenes
+---
+bq. "Getting Things Done succeeds because it first addresses a critical barrier to completing the atomic tasks that we want to accomplish in a given day. Thatâ€™s 'stuff'. Amorphous, unactionable, flop-sweat-inducing stuff."
+
+*Summaries:*
+"Getting started with 'Getting Things Done'":http://www.43folders.com/2004/09/getting_started.html
+"Getting Things Done: The system, the book":http://www.coloradocollege.edu/library/Instruction/gtd.html
+"Notes from Getting Things Done by David Allen":http://www.minezone.org/wiki/MVance/GettingThingsDone
+
+"Workflow as PDF":http://www.davidco.com/pdfs/gtd_workflow_advanced.pdf
+
+Excerpts from the book 'Getting Things Done'
+"Sample Chapter 1":http://www.businessweek.com/smallbiz/content/aug2001/sb20010824_770.htm
+"Sample Chapter 6":http://www.businessweek.com/smallbiz/content/aug2001/sb20010831_548.htm

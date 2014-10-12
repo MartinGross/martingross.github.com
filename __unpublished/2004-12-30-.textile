@@ -1,0 +1,12 @@
+--- 
+layout: post
+title: Appfuse
+date: 2004-12-30 01:34:00 +01:00
+permalink: /article/45/
+comments: true
+categories: 
+- Struts
+---
+"Appfuse":http://today.java.net/pub/a/today/2004/07/15/thefuse.html ist eine Web-Applikation, die verschiedene Open Source Frameworks wie z.B. Struts, Spring und Hibernate zusammen einsetzt. 
+
+Sie ist als Startpunkt fÃ¼r den sinnvollen Aufbau und als Beispiel von "best practises" von Web-Applikationen angedacht. Ich habe AppFuse noch nicht selbst testen kÃ¶nnen, aber es hÃ¶rt sich definitiv interessant an.

@@ -1,0 +1,12 @@
+--- 
+layout: post
+title: Praktisches Tool f&#252;r die Farbauswahl
+date: 2005-04-28 23:25:00 +02:00
+permalink: /article/54/
+comments: true
+categories: 
+- Web
+---
+"ColorMatch":http://www.colormatch.dk/
+
+Hilft bei der Farbauswahl von 6 passenden Farben z.B. fÃ¼r eine Website. Funktioniert leider nur im Internet Explorer.

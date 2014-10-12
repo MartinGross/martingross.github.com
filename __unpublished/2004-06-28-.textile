@@ -1,0 +1,15 @@
+--- 
+layout: post
+title: Empfehlenswerte Wissensdatenbank zu Software-Engineering
+date: 2004-06-28 11:55:09 +02:00
+permalink: /article/35/
+comments: true
+categories: 
+- Software-Entwicklung
+---
+Acht der fÃ¼hrenden deutschen Forschungseinrichtungen (u.a. einige Fraunhofer-Institute) stellen ihr umfangreiches Know-how im Bereich Software-Technik online unter "www.software-kompetenz.de":http://www.software-kompetenz.de/ in Form einer Wissensdatenbank zur VerfÃ¼gung. Sehr nÃ¼tzlich ist auch der Wissensbrowser mit dem man sehr komfortabel zu den verwandten Themen navigieren kann.
+
+bq. "Das Kompetenzzentrum hat zum Ziel, Know-how und Erfahrungen zum Thema Software-Engineering einfach und schnell zugÃ¤nglich zur VerfÃ¼gung zu stellen.
+ZusÃ¤tzlich wird der Kontakt zu Experten und der Erfahrungsaustausch zwischen Industrie und Forschung - sowie untereinander - gefÃ¶rdert."
+
+ZusÃ¤tzlich gibt es noch ein Forum zum Austausch zwischen den Lesern untereinander und eine Akademie.

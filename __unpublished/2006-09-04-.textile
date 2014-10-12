@@ -1,0 +1,13 @@
+--- 
+layout: post
+title: Intellij IDEA Plugin Wettbewerb
+date: 2006-09-04 13:17:55 +02:00
+permalink: /article/95/
+comments: true
+categories: 
+- Software-Entwicklung
+- Java
+---
+Jetbrains loben einen Wettbewerb aus, bei dem es Preise im Wert von mehr als $25.000 zu gewinnen gibt. Es geht darum neue Plugins oder Plugins mit neuer FunktionalitÃ¤t fÃ¼r IDEA zu entwickeln.
+
+Die Idee ist sehr gut, denn im Vergleich zu Eclipse gibt es leider noch nicht ganz so viele Plugins fÃ¼r IDEA bisher. Die Teilnahmebedingungen findet man "hier":http://plugins.intellij.net/contest/ .

@@ -1,0 +1,10 @@
+--- 
+layout: post
+title: Wie man den richtigen Dienstleister ausw&#228;hlt
+date: 2004-05-18 11:40:23 +02:00
+permalink: /article/8/
+comments: true
+categories: 
+- Projekt-Management
+---
+siehe altes Weblog

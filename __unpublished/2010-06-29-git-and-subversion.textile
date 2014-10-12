@@ -1,0 +1,22 @@
+--- 
+layout: post
+title: git and subversion
+date: 2010-06-29 18:38:56 +02:00
+permalink: /articles/167/git-and-subversion
+comments: true
+categories: 
+- git
+- Software-Entwicklung
+---
+Outline
+
+What is git?
+What is subversion?
+Differences
+Why would I want to use git (instead of svn)?
+What can you do if you still have subversion repositories but want to use git?
+Graphic: central Subversion repository and local git repository
+
+How do I start with git svn
+
+Commands  

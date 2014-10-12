@@ -1,0 +1,10 @@
+--- 
+layout: post
+title: Software Development is a cooperative game ...
+date: 2006-04-25 17:34:27 +02:00
+permalink: /article/79/
+comments: true
+categories: 
+- Software-Entwicklung
+---
+Interesting manifesto for agile development by "Alistair Cockburn":http://alistair.cockburn.us/crystal/articles/cgm/cooperativegamemanifesto.html

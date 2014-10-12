@@ -1,0 +1,23 @@
+--- 
+layout: post
+title: JMX
+date: 2006-04-27 15:06:00 +02:00
+permalink: /article/80/
+comments: true
+categories: 
+- Java
+- Software-Entwicklung
+---
+I am currently developing concepts for monitoring and changing the configuration of EAI components  during runtime for a customer. The components are deployed on a BEA Weblogic server.
+
+First investigations showed that JMX would probably be the best technological solution. I just want to share the most interesting pages I found so far:
+
+* "JMX presentation at Javapolis":http://wiki.javapolis.com/JP04DVDContent/talks/JMX/index.html
+* "JMX Configurator for Log4J":http://www.objectsource.com/j2eechapters/Ch06-Logging_Service.htm
+* "Design patterns for JMX and application manageability":http://devresource.hp.com/drc/resources/jmxds/index.jsp
+* "JMX Accelerated Howto":http://www.admc.com/blaine/howtos/jmx/
+
+In German:
+* "A short description of JMX in German":http://de.wikipedia.org/wiki/JMX
+* "JMX - Management ohne Wasserkopf":http://www.oio.de/public/java/jmx/jmx.htm
+* "Mit JMX bleiben Java-Anwendungen in Verbindung":http://www.zdnet.de/builder/program/0,39023551,20000903,00.htm

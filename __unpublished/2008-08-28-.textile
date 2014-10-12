@@ -1,0 +1,21 @@
+--- 
+layout: post
+title: Web Apps ohne Browser Interface
+date: 2008-08-28 15:10:46 +02:00
+permalink: /article/123/
+comments: true
+categories: 
+- Software-Entwicklung
+- Usability
+---
+Immer mehr Applikationen laufen nicht mehr lokal, sondern im Web. man denke nur an GMail. Der logische nÃ¤chste Schritt sind 'Site Specific Browsers'. D.h. Web Applikationen laufen Ã¤hnlich zu lokal installierten Anwendungen in einem eigenen Fenster. Es ist kaum noch erkennbar, dass dahinter ein Web Browser steckt.
+
+Einer von vielen Vorteilen:
+Dadurch dass sie unabhÃ¤ngig voneinander laufen, kann der Absturz einer App nicht mehr die andere mit ins Jenseits reissen.
+
+2 Vertreter dieser Kategorie sind:
+
+* "Fluid (fÃ¼r Mac)":http://fluidapp.com/
+* "Mozilla Prism (OS Ã¼bergreifend)":https://wiki.mozilla.org/Prism
+
+SaaS(Software as a Service) bzw. Web Applikationen werden dadurch wesentlich besser in das Betriebssystem integriert. 

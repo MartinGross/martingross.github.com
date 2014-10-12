@@ -1,0 +1,13 @@
+--- 
+layout: post
+title: Suchmaschinen und dynamische URLs
+date: 2004-06-01 10:36:13 +02:00
+permalink: /article/23/
+comments: true
+categories: 
+- Web
+---
+Suchmaschinen haben ein Problem mit dynamischen URLs: Sie werden oft nicht indiziert, sprich aufgelistet in den Suchergebnissen.
+
+Hier kann
+"Apache Mod Rewrite":http://httpd.apache.org/docs/mod/mod_rewrite.html helfen, indem die URL in eine suchmaschinenfreundliche Version umgestaltet wird.

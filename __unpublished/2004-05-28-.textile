@@ -1,0 +1,11 @@
+--- 
+layout: post
+title: Tips zu Struts
+date: 2004-05-28 03:25:27 +02:00
+permalink: /article/21/
+comments: true
+categories: 
+- Struts
+---
+In loser Reihenfolge werden hier zum MVC-Framework "Struts":http://jakarta.apache.org/struts Tips und Hilfen zu der Software-Entwicklung mit Struts gegeben.
+Denn oft hÃ¤ngt es bei der Software-Entwicklung mit Struts nur an ein paar Kleinigkeiten, dass die Anwendung nicht wie vorgestellt lÃ¤uft oder fleissig Exceptions erzeugt.

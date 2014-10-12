@@ -1,0 +1,14 @@
+--- 
+layout: post
+title: Flickr Plug-Ins f&#252;r Textpattern
+date: 2005-10-20 18:24:04 +02:00
+permalink: /article/72/
+comments: true
+categories: 
+- Blogging
+---
+Es gibt 2 vielversprechende Plug-Ins, um Bilder aus Flickr innerhalb des eigenen Blogs anzuzeigen:
+
+* "vdh_flickr":http://textpattern.org/plugins/221/vdhflickr
+
+* "knd_flickr":http://textpattern.org/article/476/kennedia%20flickr%20photos

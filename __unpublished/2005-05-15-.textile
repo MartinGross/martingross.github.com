@@ -1,0 +1,11 @@
+--- 
+layout: post
+title: Vorgehensmodelle f&#252;r Software-Projekte
+date: 2005-05-15 22:33:25 +02:00
+permalink: /article/57/
+comments: true
+categories: 
+- Projekt-Management
+- Software-Entwicklung
+---
+"V-Modell XT Release":http://www.kbst.bund.de/V-Modell/-,293/V-Modell-XT.htm

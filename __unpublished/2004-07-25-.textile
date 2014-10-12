@@ -1,0 +1,21 @@
+--- 
+layout: post
+title: Naked Objects
+date: 2004-07-25 13:57:00 +02:00
+permalink: /article/38/
+comments: true
+categories: 
+- Java
+- Usability
+---
+Naked Objects ist eine Framework, das ein sehr schnelles Prototyping von Java und .NET Anwendungen ermÃ¶glicht. Es mÃ¼ssen lediglich die Klassen mit der Businesslogik geschrieben werden. Ãœber die Methoden der Klassen definieren sich dann die Aktionen, die mit den Objekten ausgefÃ¼hrt werden kÃ¶nnen. 
+
+Durch das NakedObjects-Framework wird dann automatisch eine Swing-OberflÃ¤che als grafische Benutzerschnittstelle generiert, mit der man direkt mit den Objekten arbeiten kann. Damit eignet es sich hervorragend, um mit den zukÃ¼nftigen Benutzern eines Systems die Anforderungen zu diskutieren bzw. abzusprechen.
+
+<txp:image id="4" />
+
+Mehr Infos:
+
+"Naked Objects Website":http://www.nakedobjects.org/
+"The Server Side Artikel zu Naked Objects":http://www.theserverside.com/articles/article.tss?l=NakedObjectSeries_1
+"Artikel im JavaPro Magazin":http://www.fawcette.com/javapro/2002_04/magazine/columns/javatecture/

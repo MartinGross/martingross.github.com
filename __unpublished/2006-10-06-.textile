@@ -1,0 +1,13 @@
+--- 
+layout: post
+title: Fraktale
+date: 2006-10-06 18:32:00 +02:00
+permalink: /article/97/
+comments: true
+categories: 
+- verschiedenes
+- Besinnliches
+---
+!/images/7.jpg!
+
+Mehr davon gibts hier: "Flame Fractals":http://content.techrepublic.com.com/2346-10878_11-33277-1.html

@@ -10,7 +10,7 @@ categories:
 ---
 Wie erreicht man den mentalen Zustand des Flows? 
 
-Viele Programmierer kennen den Zustand, wenn man total versunken in eine Aufgabe, alles um sich herum vergisst und hÃ¶chst konzentriert kreativ Aufgaben lÃ¶st. In diesen Phasen ist die ProduktivitÃ¤t am hÃ¶chsten. 
+Viele Programmierer kennen den Zustand, wenn man total versunken in eine Aufgabe, alles um sich herum vergisst und höchst konzentriert kreativ Aufgaben löst. In diesen Phasen ist die Produktivität am höchsten. 
 
 Wie man diesen Zustand bewusst erreichen kann, beschreibt:
 

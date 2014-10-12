@@ -1,0 +1,13 @@
+--- 
+layout: post
+title: Authentifizierung von Web Applikationen mittels Windows Passw&#246;rter
+date: 2004-09-17 16:22:21 +02:00
+permalink: /article/41/
+comments: true
+categories: 
+- Struts
+- Web
+---
+In dem "Artikel":http://www.theserverside.com/blogs/showblog.tss?id=ServletApp wird beschrieben, wie man mit Samba NTLM Authentication oder dem Tagish SSPI JAAS Provider eine Authentifizierung fÃ¼r Servlet Applikationen Ã¼ber Windows  PasswÃ¶rter realisieren kann. Ich hab es zwar noch nicht ausprobiert, aber es hÃ¶rt sich vielversprechend an.
+
+Auch interessant: "Easy Windows Authentication with Tomcat 4.x":http://raibledesigns.com/comments/rd?anchor=easy_windows_authentication_with_tomcat

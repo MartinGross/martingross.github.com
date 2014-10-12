@@ -1,0 +1,16 @@
+--- 
+layout: post
+title: Subversion, ein w&#252;rdiger Nachfolger f&#252;r CVS
+date: 2005-01-30 21:12:00 +01:00
+permalink: /article/46/
+comments: true
+categories: 
+- Software-Entwicklung
+---
+Subversion gibt es nun schon seit einiger Zeit, aber bisher ergab sich  nicht fÃ¼r mich die Gelegenheit, es mal zu testen. Diese Wochenende wr es dann aber soweit. Ich musste sowieso ein neues Repository aufsetzen und da erschien es sinnvoll auch die neuen Features, die es gegenÃ¼ber CVS hat, zu nutzen. 
+
+Am meisten hat man bestimmt bei CVS die MÃ¶glichkeit vermisst, dass man Dateien verschiebt ohne die Historie zu verlieren. Das geht jetzt endlich bei Subversion und es hat noch andere "Vorteile":http://subversion.tigris.org/ . 
+
+Die graphischen Clients sind noch nicht ganz so ausgereift wie fÃ¼r CVS, aber das dÃ¼rfte sich in kurzer Zeit erledigt haben. PersÃ¶nlich hat mir bisher "eSvn":http://esvn.umputun.com/ am besten gefallen, nicht zuletzt wegen der Optik. Ausserdem kann man ja auch noch auf der Kommandozeile arbeiten. FÃ¼r Eclipse gibt es inzwischen ein Plug-in und Idea soll in der nÃ¤chsten Version Subversion unterstÃ¼tzen.
+
+Es gibt zudem ein recht ausfÃ¼hrliches Handbuch zu Subversion "hier":http://svnbook.red-bean.com/ .

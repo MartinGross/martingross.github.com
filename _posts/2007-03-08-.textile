@@ -1,0 +1,17 @@
+--- 
+layout: post
+title: Besseren Java Code schreiben
+date: 2007-03-08 16:09:58 +01:00
+permalink: /article/101/
+comments: true
+categories: 
+- Java
+---
+Brian Goetz hat einen interessanten "Artikel":http://java.sun.com/developer/technicalArticles/Interviews/goetz_qa.html Ã¼ber die Mythen zur Java Performance geschrieben. Er behandelt unter anderem:
+
+* Falsche Annahmen Ã¼ber Performance Probleme
+* Schreibt "dummen" Code!
+* Zu viel XML
+* Der Mythos, dass Objekte zu erzeugen viel Performance kostet
+
+"Writing Better Code: A Conversation With Sun Microsystems Technology Evangelist Brian Goetz":http://java.sun.com/developer/technicalArticles/Interviews/goetz_qa.html

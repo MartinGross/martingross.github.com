@@ -1,0 +1,18 @@
+--- 
+layout: post
+title: Microsoft / SAP Fusion
+date: 2004-06-08 05:03:00 +02:00
+permalink: /article/29/
+comments: true
+categories: 
+- Business
+---
+Vor kurzem wurde bekannt, dass Microsoft mit SAP Ã¼ber eine mÃ¶gliche Fusion verhandelte. GlÃ¼cklicherweise scheint das Thema jetzt vom Tisch zu sein. Finanziell wÃ¤re es fÃ¼r Microsoft wohl kein Problem gewesen. Man hat Barreserven von ca. 45 Milliarden US $ und SAP hat zur Zeit einen BÃ¶rsenwert von "nur" 41 Milliarden $.
+
+Wer braucht denn so einen Mega-Konzern? Beide einzeln fÃ¼r sich genommen, sind schon mehr als groÃŸ genug und kleinere Unternehmen haben es so schon schwer genug sich zu behaupten. Wenn zwei solch marktbeherrschende Unternehmen fusionieren,  hÃ¤tte dies unweigerlich zu einem noch extremeren monopol-artigen Zustand im Software-Markt gefÃ¼hrt und den fairen Wettbewerb noch stÃ¤rker eingeschrÃ¤nkt als er jetzt schon ist, .
+
+bq. "The potential merger of the two giants would have meant a dramatic restructuring of the information technology landscape, combining a near ubiquitous desktop presence with one of the leading packaged apps provider," said Steven O'Grady, an analyst at RedMonk.
+
+bq. "The resulting ripple effect would have had a dramatic impact on IT vendors up and down the platform-to-application continuum, and likely would have been of significant interest to governments on two continents," O'Grady said.
+
+Mehr dazu bei: "cnet News.com":http://news.com.com/Microsoft%2C+SAP+mulled+merger/2100-1012_3-5227738.html
