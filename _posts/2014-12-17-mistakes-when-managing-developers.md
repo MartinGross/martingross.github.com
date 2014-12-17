@@ -11,7 +11,7 @@ share: true
 published: true
 ---
 
-I have been a developer and a project manager and I couldn't agree more: Mistakes made when managing developers.
+I have worked as a developer and a project manager (and I still do) and I couldn't agree more: Mistakes made when managing developers.
 
 For example:
 
