@@ -1,6 +1,6 @@
 ---
 layout: post
-title: ""
+title: "Mistakes Entrepreneurs Make When Managing Developers"
 tags: 
   - managing
   - developers
