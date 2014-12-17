@@ -1,14 +1,13 @@
 ---
 layout: post
-title: "Sample Link Post"
-excerpt: "Example and code for using link posts."
-tags: [sample post, link post]
-link: http://mademistakes.com  
+title: "Mistakes Entrepreneurs Make When Managing Developers"
+tags: [managing, developers, mistakes, link post]
+link: http://readwrite.com/2014/11/10/managing-developers-mistakes-startups-yec
 share: true
 ---
 
-This theme supports **link posts**, made famous by John Gruber. To use, just add `link: http://url-you-want-linked` to the post's YAML front matter and you're done.
+I have been a developer and a project manager and I couldn't agree more: Mistakes made when managing developers -  http://bit.ly/1Anxzg6
 
 > And this is how a quote looks.
 
-Some [link](http://www.mademistakes.com) can also be shown.
+Here is the [link](http://readwrite.com/2014/11/10/managing-developers-mistakes-startups-yec) .
