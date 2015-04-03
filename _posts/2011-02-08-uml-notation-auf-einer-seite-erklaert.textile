@@ -10,10 +10,10 @@ categories:
 ---
 Eine der besten und prägnantesten Übersichten für die UML (Unified Modelling Language) habe ich bei "Wikipedia":http://de.wikipedia.org/wiki/Unified_Modeling_Language gefunden. 
 
-!http://www.datazoo.de/images/posts/11.png!:http://www.datazoo.de/file_download/1/UML-Diagramme.pdf
+!http://www.datazoo.de/images/posts/11.png!:http://www.datazoo.de/file_downloads/UML-Diagramme.pdf
 
 Leider wurde es dort nur im PNG bzw. SVG Format veröffentlicht. Daher habe ich es vom Vektorformat direkt nach PDF konvertiert, das sich am besten von allen Formaten ausdrucken läßt. 
 
 Herunterzuladen hier:
 
-"UML-Diagramme.pdf":http://www.datazoo.de/file_download/1/UML-Diagramme.pdf
+"UML-Diagramme.pdf":http://www.datazoo.de/file_downloads/UML-Diagramme.pdf
