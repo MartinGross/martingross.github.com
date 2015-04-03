@@ -8,6 +8,6 @@ categories:
 - Utilities
 - Linux
 ---
-!http://www.datazoo.de/images/4.png!
+!/images/posts/4.png!
 
 Found it "here":http://www.ibiblio.org/web-gentoo/images/vicheat-final.png

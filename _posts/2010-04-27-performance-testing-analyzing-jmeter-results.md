@@ -10,7 +10,7 @@ categories:
 ---
 ## JMeter Test results
 
-!http://www.datazoo.de/images/7.jpg!
+![Load](/images/posts/7.jpg)
 
 [JMeter](http://jakarta.apache.org/jmeter/) uses so called [listeners](http://jakarta.apache.org/jmeter/usermanual/listeners.html) to record the results of test runs. JMeter is able to display the results as tables or graphs and - even better for later analysis - to write them to a log file. 
 
@@ -48,7 +48,7 @@ Analyzing the log file manually ain't the most efficient way to get some insight
 
 See below an example of a JMeter graph from the JMeter manual:
 
-!http://www.datazoo.de/images/6.png!
+![a JMeter graph](/images/posts/6.png)
 
 ## Using a graphing utility for diagrams 
 

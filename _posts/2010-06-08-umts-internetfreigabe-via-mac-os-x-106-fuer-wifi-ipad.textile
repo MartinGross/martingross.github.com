@@ -46,11 +46,11 @@ Die IP Adresse die hinter SERVER steht, ist die IP Adresse des DNS Servers, die 
 Jetzt haben wir alle Informationen zusammen.
 
 5. Airport auf dem Mac konfigurieren: Systemeinstellungen, Netzwerk, Airport wählen. 
-!http://www.datazoo.de/images/9.png!
+!/images/posts/9.png!
 
 Dort 'weitere Optionen' und TCP/IP anwählen. IPv4 konfigurieren auf manuell setzen. Die oben notierte IP Adresse unter IPv4-Adresse eingeben. Teilnetzmaske auf 255.0.0.0 setzen. 
 
-!http://www.datazoo.de/images/10.png!
+!/images/posts/10.png!
 
 Airport aktivieren, falls noch nicht der Fall.
 
