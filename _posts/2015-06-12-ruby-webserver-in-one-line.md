@@ -13,3 +13,5 @@ Sometimes you just need a very basic ad hoc http static server in your current d
 ```
 ruby -rwebrick -e'WEBrick::HTTPServer.new(Port: 8000, DocumentRoot: Dir.pwd).start'
 ```
+
+The webserver will be available at http://localhost:8000 . Have fun!
