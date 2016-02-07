@@ -107,20 +107,3 @@ The script code and some example diagrams will follow in one of my next blog art
 ---
 <script src="https://app.convertkit.com/landing_pages/23015.js"></script>
 
-
-*Do you want to be informed when new JMeter articles will be published?*
-
-<a markdown="0" href="http://eepurl.com/dbZp-/" class="btn">Sign up for my free newsletter!</a>
-
-
-
-
-
-
-
-
-
-
-
-
-
