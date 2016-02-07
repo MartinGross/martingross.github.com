@@ -103,7 +103,5 @@ What is still missing:
 
 The script code and some example diagrams will follow in one of my next blog articles.
 
-
----
 <script src="https://app.convertkit.com/landing_pages/23015.js"></script>
 
