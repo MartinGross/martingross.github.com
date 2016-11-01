@@ -20,7 +20,9 @@ The TLS protocols use algorithms from a cipher suite to create keys and encrypt 
 - Key exchange
 - Bulk encryption
 - Message authentication
-https://d2mxuefqeaa7sj.cloudfront.net/s_17E99CBD6419C17583FBFDAD1533494D44CAF5895C766F44150583FE8A302E83_1473802480146_Cipher+Suite+Naming.png
+
+![Naming a cipher suite](../../images/posts/12.png "Naming a cipher suite")
+
 
 
 Key exchange algorithms protect information required to create shared keys. These algorithms are asymmetric (public key algorithms) and perform well for relatively small amounts of data.
@@ -58,7 +60,7 @@ There is no way to distribute the files with your program; they must be installe
 
 ## How to avoid installing “Unlimited Strength” JCE policy files?
 
-To the best of my knowledge, there is **no reliable**** **workaround to install the JCE policy files if you are using an Oracle JDK or JRE. 
+To the best of my knowledge, there is **no reliable** workaround to install the JCE policy files if you are using an Oracle JDK or JRE. 
 
 
 1. Some websites mention a [reflection based workaround](http://stackoverflow.com/questions/1179672/how-to-avoid-installing-unlimited-strength-jce-policy-files-when-deploying-an) to enable stronger encryption but this is reported to not work with TLS1.2 ciphers.
