@@ -8,8 +8,6 @@ image:
   feature:
 ---
 
-# TLS 1.2 and Java Cryptography Extension (JCE) 
-
 [TLS 1.2](https://en.wikipedia.org/wiki/Transport_Layer_Security#TLS_1.2) needs strong encryption capabilities. TLS 1.2 defines certain cipher suites to be used to enforce strong encryption. A list of the TLS 1.2 cipher suites can be found [at the OpenSSL site](https://www.openssl.org/docs/manmaster/apps/ciphers.html) or [in the RFC 5246 document](https://tools.ietf.org/html/rfc5246#appendix-A.5).
 
 ## What is a cipher suite?
