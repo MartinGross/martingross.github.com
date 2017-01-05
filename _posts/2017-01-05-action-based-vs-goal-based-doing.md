@@ -5,6 +5,10 @@ date: '2017-01-05 19:16'
 comments: true
 categories: todo
 published: true
+tags:
+  - productivity
+  - GTD
+  - goals
 ---
 
 If you follow the 'Getting Things Done' approach you are aware of all the to do lists detailing all the actions. Actions you wrote down. Actions you are supposed to do to. Actions to complete your projects.
