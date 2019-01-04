@@ -1,6 +1,6 @@
---- 
+---
 layout: post
-title: API Design und warum es wichtig ist
+title: "API Design und warum es wichtig ist"
 date: 2007-10-23 19:01:51 +02:00
 permalink: /articles/112/
 comments: true
@@ -8,6 +8,7 @@ categories:
 - Software-Entwicklung
 - Java
 ---
+
 Wenn man sich mit der Entwicklung eines Application Programming Interface (API) befassen will, bekommt man in "How to Design a Good
 API and Why it Matters"  ("http://lcsd05.cs.tamu.edu/slides/keynote.pdf":http://lcsd05.cs.tamu.edu/slides/keynote.pdf) von Joshua Bloch wertvolle Tips. 
 
