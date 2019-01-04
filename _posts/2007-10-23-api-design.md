@@ -17,22 +17,22 @@ Joshua Bloch hat bei Sun eines der wichtigsten API der Java-Plattform (nämlich 
 Hier seien nur einige wichtige Kernaussagen aus seinem Vortrag kurz aufgezählt:
 
 * APIs can be among a company's greatest assets
-** Customers invest heavily: buying, writing, learning
-** Cost to stop using an API can be prohibitive
-** Successful public APIs capture customers
+* Customers invest heavily: buying, writing, learning
+* Cost to stop using an API can be prohibitive
+* Successful public APIs capture customers
 
 * Can also be among company's greatest liabilities
-** Bad APIs result in unending stream of support calls
+* Bad APIs result in unending stream of support calls
 
 * Public APIs are forever - one chance to get it right
 
-* Characteristics of a Good API
-** Easy to learn
-** Easy to use, even without documentation
-** Hard to misuse
-** Easy to read and maintain code that uses it
-** Sufficiently powerful to satisfy requirements
-** Easy to extend
-** Appropriate to audience
+Characteristics of a Good API
+* Easy to learn
+* Easy to use, even without documentation
+* Hard to misuse
+* Easy to read and maintain code that uses it
+* Sufficiently powerful to satisfy requirements
+* Easy to extend
+* Appropriate to audience
 
 Absolut empfehlenswert die Präsentation. Die Ratschläge sind sehr umso besser nachvollziehbar, wenn man schon mal mit einem API arbeiten musste, das diesen Namen eigentlich nicht verdient hat.
