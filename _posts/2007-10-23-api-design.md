@@ -10,9 +10,9 @@ categories:
 ---
 
 Wenn man sich mit der Entwicklung eines Application Programming Interface (API) befassen will, bekommt man in ["How to Design a Good
-API and Why it Matters"](http://lcsd05.cs.tamu.edu/slides/keynote.pdf) von Joshua Bloch wertvolle Tips. 
+API and Why it Matters"](https://research.google.com/pubs/archive/32713.pdf) von Joshua Bloch wertvolle Tips. 
 
-Joshua Bloch hat bei Sun eines der wichtigsten API der Java-Plattform (nämlich das "http://java.sun.com/docs/books/tutorial/collections/index.html":Java Collections Framework) designt und implementiert. Ausserdem stammt das Buch "Effective Java":http://www.amazon.de/Effective-Java-Programming-Language-Guide/dp/0321356683/ von ihm.
+Joshua Bloch hat bei Sun eines der wichtigsten API der Java-Plattform (nämlich das [Java Collections Framework](http://java.sun.com/docs/books/tutorial/collections/index.html) ) designt und implementiert. Ausserdem stammt das Buch "Effective Java" von ihm.
 
 Hier seien nur einige wichtige Kernaussagen aus seinem Vortrag kurz aufgezählt:
 
