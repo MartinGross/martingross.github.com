@@ -10,7 +10,4 @@ categories:
 - Projekt-Management
 ---
 
-<iframe src="http://blip.tv/play/hbZ3gvC0GAI.html?p=1" width="596" height="334" frameborder="0" allowfullscreen>
-</iframe>
-<embed type="application/x-shockwave-flash" src="http://a.blip.tv/api.swf#hbZ3gvC0GAI" style="display:none">
-
+*[Das ursprünglich hier eingebettete Video von Blip.tv ist leider nicht mehr verfügbar, da die Plattform 2015 geschlossen wurde.]*
