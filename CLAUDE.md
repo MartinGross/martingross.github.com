@@ -62,3 +62,21 @@ JavaScript files are concatenated and minified via Grunt:
 - Site uses protocol-relative URLs (`//www.datazoo.de`)
 - Disqus comments enabled (shortname: datazoo)
 - Jekyll sitemap plugin enabled
+
+## Git Repository Structure
+
+### Branches
+- **master**: Active development branch (deployed to GitHub Pages)
+- **origin/gh-pages**: Legacy branch (deprecated, not actively used)
+
+### Remote Repositories
+- **origin**: `https://github.com/MartinGross/martingross.github.com.git`
+- **upstream**: `https://github.com/mmistakes/minimal-mistakes.git` (Original Minimal Mistakes theme)
+
+### Upstream Branches (Reference Only)
+The following upstream branches are from the original Minimal Mistakes theme repository and are not actively used:
+- `upstream/master`: Current theme development
+- `upstream/gh-pages-2.2.1`, `upstream/gh-pages-3.1.6`: Old theme versions
+- `upstream/flexbox-sticky-footer`, `upstream/navbar-menu`: Feature branches
+
+**Note**: This site uses `master` branch for GitHub Pages (standard for user page repositories). The `origin/gh-pages` branch is outdated and no longer maintained.
