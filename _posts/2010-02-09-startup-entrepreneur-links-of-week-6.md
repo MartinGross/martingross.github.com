@@ -1,0 +1,23 @@
+---
+
+layout: post
+title: Startup Entrepreneur Links of Week 6
+date: 2010-02-09 20:14:29 +01:00
+permalink: /articles/150/startup-entrepreneur-links-of-week-6/
+comments: true
+categories: 
+- Business
+- Entrepreneur
+---
+
+[Copying Y Combinator WHY and
+HOW](http://blog.jedchristiansen.com/2009/09/21/copying-y-combinator-why-and-how/)
+
+[Minimalist
+Marketing](http://intrepid-llc.com/2010/02/06/minimalist-marketing/)
+
+[101 Small Business Mistakes (and What You Can Learn From
+Them)](http://www.openforum.com/idea-hub/topics/money/article/101-small-business-mistakes-and-what-you-can-learn-from-them-gregory-go)
+
+[If your product is Great, it doesn't need to be
+Good.](http://paulbuchheit.blogspot.com/2010/02/if-your-product-is-great-it-doesnt-need.html)

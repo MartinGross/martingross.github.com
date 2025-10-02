@@ -1,0 +1,40 @@
+---
+
+layout: post
+title: "Studie: Benutzerfreundlichkeit ist der Schl&#252;ssel zum Erfolg"
+date: 2004-06-16 04:34:43 +02:00
+permalink: /articles/33/
+comments: true
+categories: 
+- Usability
+- Software-Entwicklung
+---
+
+Eigentlich kam nichts Überraschendes bei einer Studie des
+Fraunhofer-Instituts für Arbeitswirtschaft und Organisation (IAO)
+heraus. Aber trotzdem ist es doch immer wieder wichtig, darauf
+hinzuweisen:
+
+> Auf die Frage "Was erwarten Sie von einer guten Technologie?" nannten
+> die Befragten Stabilität und Benutzerfreundlichkeit als die
+> wesentlichen Punkte. "Das sind die beiden wichtigsten
+> Akzeptanzfaktoren für neue Technologien", so Arbeitswissenschaftler
+> Greisle. Weit abgeschlagen werden Design und persönlicher Imagegewinn
+> genannt. Für Greisle sind die Aussagen von besonderer Bedeutung,
+> betreffen sie doch die Hausaufgaben der Hersteller: "Nicht auf ein
+> tolles Design und nicht auf überflüssige Funktionen kommt es an. Die
+> Anwender wollen stabile und benutzerfreundliche Lösungen."
+
+> Bei der Frage nach Verbesserungspotentialen führen ebenfalls mit
+> großem Abstand Stabilität und Benutzerfreundlichkeit. Das sollte zum
+> Nachdenken anregen, weil die Anwender genau in den Punkten
+> Verbesserungen fordern. Wollen Hersteller und Unternehmen die
+> Akzeptanz für Produkte und Lösungen fördern, so liegen aus
+> Anwendersicht hier die wesentlichen Punkte. Hersteller und Leute, die
+> Technologien in Unternehmen einführen, sollten darauf achten, dass
+> Stabilität und Benutzerfreundlichkeit vorhanden sind, rät der
+> Fraunhofer-Mann. Wer das schafft, habe einen ganz wichtigen Schritt in
+> Richtung Akzeptanz gemacht, meint Greisle.
+
+Gefunden bei
+[silicon.de](http://www.silicon.de/cpo/ts-cio/detail.php?nr=15053&directory=ts-cio)

@@ -1,0 +1,16 @@
+---
+
+layout: post
+title: X.509 Certificate
+date: 2009-07-17 15:41:00 +02:00
+permalink: /articles/137/x509-certificate/
+comments: true
+categories: 
+- Web-Services
+---
+
+X.509 is a standard for a public key infrastructure (PKI) and specifies,
+amongst other things, standard formats for public key certificates and
+certification path validation.
+
+[RFC 3280](http://ftp.isi.edu/in-notes/rfc3280.txt)

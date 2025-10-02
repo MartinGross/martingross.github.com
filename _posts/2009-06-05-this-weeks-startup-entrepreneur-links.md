@@ -1,0 +1,39 @@
+---
+
+layout: post
+title: This week's Startup Entrepreneur Links
+date: 2009-06-05 08:25:00 +02:00
+permalink: /articles/130/
+comments: true
+categories: 
+- Entrepreneur
+- Business
+---
+
+[Finding a URL and Company Name -
+ReadWriteStart](http://www.readwriteweb.com/readwritestart/2009/06/finding-a-url-and-company-name.php)
+
+[The Effective Strategy For Choosing Right Domain
+Names](http://www.smashingmagazine.com/2009/05/02/the-effective-strategy-for-choosing-right-domain-names/)
+
+[3 Tips for Making Deadlines Your Friend -
+FreelanceSwitch](http://www.freelanceswitch.com/working/3-tips-for-making-deadlines-your-friend/)
+
+[Process Simulation and Outcome Simulation: The Truth About
+Vizualization and Goal
+Achievement](http://www.jonathanfields.com/blog/the-truth-about-vizualization-and-goal-achievement/)
+
+[Customers Hate Your Product? Try This Lean Startup Technique And
+Theyâ€™ll Love it.](http://blog.mixergy.com/ries-lean/)
+
+[How Hard Could It Be?: The Four Pillars of Organic
+Growth](http://www.inc.com/magazine/20080101/how-hard-could-it-be-the-four-pillars-of-organic-growth.html)
+
+[Startup Lessons](http://paulgraham.com/startuplessons.html) by Paul
+Graham
+
+[15 Quick Pitch Tips for Kick Ass
+Presentations](http://www.instigatorblog.com/15-quick-pitch-tips/2009/04/20/)
+
+[Startup Executive Summary Template For Capital
+Raising](http://www.pollenizer.com/content/startup-executive-summary-capital-raising)

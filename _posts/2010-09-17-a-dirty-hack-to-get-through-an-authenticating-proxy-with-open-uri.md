@@ -1,0 +1,38 @@
+---
+
+layout: post
+title: A dirty hack to get through an authenticating proxy with open-uri
+date: 2010-09-17 14:51:53 +02:00
+permalink: /articles/171/a-dirty-hack-to-get-through-an-authenticating-proxy-with-open-uri/
+comments: true
+categories: 
+- JRuby
+---
+
+I had problems parsing a webpage with Nokogiri on JRuby 1.5.2 . The
+proxy authentication was the issue.
+
+Here is how I solved this issue:
+
+Set your environment variable HTTP_PROXY with your proxy data (user,
+password, URL, port) e.g.
+
+    HTTP_PROXY=http://prxuser:prxpasswd@prx-server:8080
+
+Then change in lib\\ruby\\1.8\\open-uri.rb, line 216, from:
+
+`klass = Net::HTTP::Proxy(proxy.host, proxy.port)`
+
+to:
+
+`klass = Net::HTTP::Proxy(proxy.host, proxy.port, proxy.user, proxy.password)`
+
+And test it with:
+
+    require 'rubygems'
+    require 'nokogiri'
+    require 'open-uri'
+    html_doc = Nokogiri::HTML(open("http://www.google.com/search?hl=de&q=software"))
+    html_doc.css('h3>a').each do |node|
+      puts node.text
+    end

@@ -1,0 +1,20 @@
+---
+
+layout: post
+title: Zusammenfassung von Vorträgen
+date: 2007-12-07 18:21:07 +01:00
+permalink: /article/113/
+comments: true
+categories: 
+- Business
+---
+
+Eine interessante und ungewöhnliche, aber effektive Art und Weise der
+Zusammenfassung von Vorträgen einer Konferenz liefert uns [Mike
+Rohde](http://www.flickr.com/photos/rohdesign/sets/72157602795582286/)
+in der Form von sogenannten Sketch Notes.
+
+!/images/9.jpg (Sketch Note)!
+
+In diesem Fall für die [SEED
+Conference](http://www.seedconference.com/).
