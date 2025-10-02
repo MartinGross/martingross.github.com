@@ -25,37 +25,37 @@ XSD files I had to set them to explicitly copy them to META-INF:
 
 {% highlight xml %}\
 ...\
-`<plugin>`{=html}\
-`<groupId>`{=html}org.apache.axis2`</groupId>`{=html}\
-`<artifactId>`{=html}axis2-aar-maven-plugin`</artifactId>`{=html}\
-`<version>`{=html}1.3`</version>`{=html}\
-`<configuration>`{=html}
+`<plugin>\
+`<groupId>org.apache.axis2`</groupId>\
+`<artifactId>axis2-aar-maven-plugin`</artifactId>\
+`<version>1.3`</version>\
+`<configuration>
 
-`<fileSets>`{=html}\
-`<fileSet>`{=html}\
-`<directory>`{=html}\${basedir}/src/main/axis2`</directory>`{=html}\
-`<outputDirectory>`{=html}META-INF`</outputDirectory>`{=html}\
-`<includes>`{=html}\
-`<include>`{=html}/\*.xml`</include>`{=html}\
-`<include>`{=html}/\*.xsd`</include>`{=html}\
-`<include>`{=html}/\*.wsdl`</include>`{=html}\
-`</includes>`{=html}\
-`</fileSet>`{=html}
+`<fileSets>\
+`<fileSet>\
+`<directory>\${basedir}/src/main/axis2`</directory>\
+`<outputDirectory>META-INF`</outputDirectory>\
+`<includes>\
+`<include>/\*.xml`</include>\
+`<include>/\*.xsd`</include>\
+`<include>/\*.wsdl`</include>\
+`</includes>\
+`</fileSet>
 
-`</fileSets>`{=html}
+`</fileSets>
 
-`<servicesXmlFile>`{=html}\${basedir}/src/main/axis2/services.xml`</servicesXmlFile>`{=html}\
-`<wsdlFile>`{=html}\${basedir}/src/main/axis2/loginservice.wsdl`</wsdlFile>`{=html}\
-`<wsdlFileName>`{=html}loginservice.wsdl`</wsdlFileName>`{=html}\
-`</configuration>`{=html}\
-`<executions>`{=html}\
-`<execution>`{=html}\
-`<goals>`{=html}\
-`<goal>`{=html}aar`</goal>`{=html}\
-`</goals>`{=html}\
-`</execution>`{=html}\
-`</executions>`{=html}\
-`</plugin>`{=html}\
+`<servicesXmlFile>\${basedir}/src/main/axis2/services.xml`</servicesXmlFile>\
+`<wsdlFile>\${basedir}/src/main/axis2/loginservice.wsdl`</wsdlFile>\
+`<wsdlFileName>loginservice.wsdl`</wsdlFileName>\
+`</configuration>\
+`<executions>\
+`<execution>\
+`<goals>\
+`<goal>aar`</goal>\
+`</goals>\
+`</execution>\
+`</executions>\
+`</plugin>\
 ...\
 {% endhighlight %}
 
@@ -70,29 +70,29 @@ page](http://ws.apache.org/axis2/tools/1_3/maven-plugins/maven-wsdl2code-plugin.
 . The guide provides the following snippet:
 
 {% highlight xml %}\
-`<build>`{=html}\
-`<plugins>`{=html}\
-`<plugin>`{=html}\
-`<groupId>`{=html}org.apache.axis2.maven2`</groupId>`{=html}\
-`<artifactId>`{=html}axis2-wsdl2code-maven-plugin`</artifactId>`{=html}\
-`<executions>`{=html}\
-`<execution>`{=html}\
-`<goals>`{=html}\
-`<goal>`{=html}wsdl2code`</goal>`{=html}\
-`</goals>`{=html}\
-`</execution>`{=html}\
-`</executions>`{=html}\
-`<configuration>`{=html}\
-`<packageName>`{=html}com.foo.myservice`</packageName>`{=html}\
-`</configuration>`{=html}\
-`</plugin>`{=html}\
-`</plugins>`{=html}\
-`</build>`{=html}\
+`<build>\
+`<plugins>\
+`<plugin>\
+`<groupId>org.apache.axis2.maven2`</groupId>\
+`<artifactId>axis2-wsdl2code-maven-plugin`</artifactId>\
+`<executions>\
+`<execution>\
+`<goals>\
+`<goal>wsdl2code`</goal>\
+`</goals>\
+`</execution>\
+`</executions>\
+`<configuration>\
+`<packageName>com.foo.myservice`</packageName>\
+`</configuration>\
+`</plugin>\
+`</plugins>\
+`</build>\
 {% endhighlight %}
 
 When invoking directly as recommended with
-`<br/>`{=html}`<code>`{=html}mvn wsdl2code:wsdl2code`</code>`{=html}
-`<br/>`{=html}I got an build error:
+<br/><code>mvn wsdl2code:wsdl2code`</code>
+`<br/>I got an build error:
 
     <code>
     [INFO] Scanning for projects...
@@ -104,7 +104,7 @@ When invoking directly as recommended with
     [INFO] ------------------------------------------------------------------------
     </code>
 
-Using `<code>`{=html}axis2-wsdl2code:wsdl2code`</code>`{=html} instead
+Using `<code>axis2-wsdl2code:wsdl2code`</code> instead
 solves this problem.
 
 But then the next problem is:
@@ -146,9 +146,9 @@ like the following solves this problem, too:
 
 {% highlight xml %}\
 ...\
-`<groupId>`{=html}org.apache.axis2`</groupId>`{=html}\
-`<artifactId>`{=html}axis2-wsdl2code-maven-plugin`</artifactId>`{=html}\
-`<version>`{=html}1.3`</version>`{=html}\
+`<groupId>org.apache.axis2`</groupId>\
+`<artifactId>axis2-wsdl2code-maven-plugin`</artifactId>\
+`<version>1.3`</version>\
 ...\
 {% endhighlight %}
 
@@ -160,10 +160,10 @@ databinding and packagename params you would add the following tags:
 
 {% highlight xml %}\
 ...\
-`<configuration>`{=html}\
-`<databindingName>`{=html}xmlbeans`</databindingName>`{=html}\
-`<packageName>`{=html}your.pkg.name.here`</packageName>`{=html}\
-`</configuration>`{=html}\
+`<configuration>\
+`<databindingName>xmlbeans`</databindingName>\
+`<packageName>your.pkg.name.here`</packageName>\
+`</configuration>\
 ...\
 {% endhighlight %}
 

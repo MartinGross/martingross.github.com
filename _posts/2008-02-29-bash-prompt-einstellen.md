@@ -14,11 +14,11 @@ Beispiel:
 
 Durch Eingabe von
 
-`<code>`{=html}export PS1='\\\\u@\\\\h:\\\\w\>'`</code>`{=html}
+`<code>export PS1='\\\\u@\\\\h:\\\\w\>'`</code>
 
 erhÃ¤lt man folgenden Prompt
 
-`<code>`{=html}user1@test01:\~\>`</code>`{=html}
+`<code>user1@test01:\~\>`</code>
 
 Mehr dazu: [Tip: Prompt
 magic](http://www.ibm.com/developerworks/library/l-tip-prompt/index.html)

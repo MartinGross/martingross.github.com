@@ -10,7 +10,7 @@ categories:
 - Utilities
 ---
 
-`<a href="http://www.flickr.com/photos/tonyapoole/2952757091/" title="Flex by adventurejournalist, on Flickr">`{=html}`<img src="http://farm4.static.flickr.com/3140/2952757091_b8d500a7a0_m.jpg" width="240" height="160" alt="Flex" />`{=html}`</a>`{=html}
+<a href="http://www.flickr.com/photos/tonyapoole/2952757091/" title="Flex by adventurejournalist, on Flickr"><img src="http://farm4.static.flickr.com/3140/2952757091_b8d500a7a0_m.jpg" width="240" height="160" alt="Flex" />`</a>
 
 Logfiles tend to grow and grow and grow. The other day I had a log file
 about 1.3 GB large.

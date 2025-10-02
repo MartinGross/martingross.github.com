@@ -11,4 +11,7 @@ categories:
 
 <object width="560" height="340">
 
-`<param name="movie" value="http://www.youtube.com/v/_5N7iaPN8tM&hl=de&fs=1&rel=0">`{=html}`</param>`{=html}`<param name="allowFullScreen" value="true">`{=html}`</param>`{=html}`<param name="allowscriptaccess" value="always">`{=html}`</param>`{=html}`<embed src="http://www.youtube.com/v/_5N7iaPN8tM&hl=de&fs=1&rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="560" height="340">`{=html}`</embed>`{=html}`</object>`{=html}
+<param name="movie" value="http://www.youtube.com/v/_5N7iaPN8tM&hl=de&fs=1&rel=0">
+<param name="allowFullScreen" value="true">
+<param name="allowscriptaccess" value="always">
+<embed src="http://www.youtube.com/v/_5N7iaPN8tM&hl=de&fs=1&rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="560" height="340">`</object>

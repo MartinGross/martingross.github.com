@@ -21,8 +21,8 @@ To change that I had to modify two files in the JRUBY_HOME\\bin folder:
 
 **Antialiasing on:**\
 Thats just a jvm argument you have to add.\
-Add `<code>`{=html}-Dswing.aatext=true`</code>`{=html} to jirb_swing.bat
-after `<code>`{=html}-Djruby.lib="%JRUBY_HOME%\\lib"`</code>`{=html}.
+Add `<code>-Dswing.aatext=true`</code> to jirb_swing.bat
+after `<code>-Djruby.lib="%JRUBY_HOME%\\lib"`</code>.
 Depending on which version of JRuby you are using it can be also in
 jruby.bat .
 
@@ -38,8 +38,8 @@ provide several fonts which will be loaded whatever will be found first.
 So I want Anonymous as my font. Monaco is not available on my system,
 but Andale is. I set Anonymous as the second choice:
 
-`<code>`{=html}text.font = find_font('Monospaced', Font::PLAIN, 12,
-'Monaco','Anonymous','Andale Mono')`</code>`{=html}
+`<code>text.font = find_font('Monospaced', Font::PLAIN, 12,
+'Monaco','Anonymous','Andale Mono')`</code>
 
 Swing uses then Anonymous (Monaco is not installed).
 

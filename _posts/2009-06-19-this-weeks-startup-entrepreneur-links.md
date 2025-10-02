@@ -35,18 +35,18 @@ Think](http://timberry.bplans.com/2009/06/no-37signals-planning-is-not-what-you-
 
 <div style="width:425px;text-align:left" id="__ss_1245987">
 
-`<a style="font:14px Helvetica,Arial,Sans-serif;display:block;margin:12px 0 3px 0;text-decoration:underline;" href="http://www.slideshare.net/startuplessonslearned/eric-ries-lean-startup-presentation-for-web-20-expo-april-1-2009-a-disciplined-approach-to-imagining-designing-and-building-new-products?type=presentation" title="Eric Ries Lean Startup Presentation For Web 2.0 Expo April 1 2009 A Disciplined Approach To Imagining, Designing, And Building New Products">`{=html}Eric
+`<a style="font:14px Helvetica,Arial,Sans-serif;display:block;margin:12px 0 3px 0;text-decoration:underline;" href="http://www.slideshare.net/startuplessonslearned/eric-ries-lean-startup-presentation-for-web-20-expo-april-1-2009-a-disciplined-approach-to-imagining-designing-and-building-new-products?type=presentation" title="Eric Ries Lean Startup Presentation For Web 2.0 Expo April 1 2009 A Disciplined Approach To Imagining, Designing, And Building New Products">Eric
 Ries Lean Startup Presentation For Web 2.0 Expo April 1 2009 A
 Disciplined Approach To Imagining, Designing, And Building New
-Products`</a>`{=html}`<object style="margin:0px" width="425" height="355">`{=html}`<param name="movie" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=ericriesleanstartuppresentationforweb2-0expoapril12009adisciplinedapproachtoimaginingdesigningandbuildingnewproducts-090403154556-phpapp02&rel=0&stripped_title=eric-ries-lean-startup-presentation-for-web-20-expo-april-1-2009-a-disciplined-approach-to-imagining-designing-and-building-new-products" />`{=html}`<param name="allowFullScreen" value="true"/>`{=html}`<param name="allowScriptAccess" value="always"/>`{=html}`<embed src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=ericriesleanstartuppresentationforweb2-0expoapril12009adisciplinedapproachtoimaginingdesigningandbuildingnewproducts-090403154556-phpapp02&rel=0&stripped_title=eric-ries-lean-startup-presentation-for-web-20-expo-april-1-2009-a-disciplined-approach-to-imagining-designing-and-building-new-products" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="355">`{=html}`</embed>`{=html}`</object>`{=html}
+Products</a><object style="margin:0px" width="425" height="355"><param name="movie" value="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=ericriesleanstartuppresentationforweb2-0expoapril12009adisciplinedapproachtoimaginingdesigningandbuildingnewproducts-090403154556-phpapp02&rel=0&stripped_title=eric-ries-lean-startup-presentation-for-web-20-expo-april-1-2009-a-disciplined-approach-to-imagining-designing-and-building-new-products" /><param name="allowFullScreen" value="true"/><param name="allowScriptAccess" value="always"/><embed src="http://static.slidesharecdn.com/swf/ssplayer2.swf?doc=ericriesleanstartuppresentationforweb2-0expoapril12009adisciplinedapproachtoimaginingdesigningandbuildingnewproducts-090403154556-phpapp02&rel=0&stripped_title=eric-ries-lean-startup-presentation-for-web-20-expo-april-1-2009-a-disciplined-approach-to-imagining-designing-and-building-new-products" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="425" height="355"></object>
 
 <div style="font-size:11px;font-family:tahoma,arial;height:26px;padding-top:2px;">
 
 View more
-`<a style="text-decoration:underline;" href="http://www.slideshare.net/">`{=html}OpenOffice
-presentations`</a>`{=html} from
-`<a style="text-decoration:underline;" href="http://www.slideshare.net/startuplessonslearned">`{=html}Eric
-Ries`</a>`{=html}.
+`<a style="text-decoration:underline;" href="http://www.slideshare.net/">OpenOffice
+presentations`</a> from
+`<a style="text-decoration:underline;" href="http://www.slideshare.net/startuplessonslearned">Eric
+Ries`</a>.
 
 </div>
 </div>
