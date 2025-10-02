@@ -2,7 +2,7 @@
 layout: post
 title: Startup Entrepreneur Links of the Week
 date: 2010-02-19 15:09:04 +01:00
-permalink: /articles/151/startup-entrepreneur-links-of-the-week
+permalink: /articles/151/startup-entrepreneur-links-of-the-week/
 comments: true
 categories: 
 - Entrepreneur

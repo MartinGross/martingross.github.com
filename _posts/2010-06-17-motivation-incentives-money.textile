@@ -2,7 +2,7 @@
 layout: post
 title: Motivation, incentives, money
 date: 2010-06-17 13:27:20 +02:00
-permalink: /articles/162/motivation-incentives-money
+permalink: /articles/162/motivation-incentives-money/
 comments: true
 categories: 
 - Business

@@ -2,7 +2,7 @@
 layout: post
 title: How to get started designing a website
 date: 2010-02-05 18:20:20 +01:00
-permalink: /articles/149/how-to-get-started-designing-a-website
+permalink: /articles/149/how-to-get-started-designing-a-website/
 comments: true
 categories: 
 - Web

@@ -2,7 +2,7 @@
 layout: post
 title: Blog about JRuby Resources
 date: 2012-04-24 14:34:35 +02:00
-permalink: /articles/181/blog-about-jruby-resources
+permalink: /articles/181/blog-about-jruby-resources/
 comments: true
 categories: 
 - JRuby

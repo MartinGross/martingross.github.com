@@ -2,7 +2,7 @@
 layout: post
 title: Testing web apps with Selenium Page Objects
 date: 2012-09-04 17:59:56 +02:00
-permalink: /articles/184/testing-web-apps-with-selenium-page-objects
+permalink: /articles/184/testing-web-apps-with-selenium-page-objects/
 comments: true
 categories: 
 - software-testing

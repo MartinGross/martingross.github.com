@@ -2,7 +2,7 @@
 layout: post
 title: Building High Performance Development Teams
 date: 2012-08-08 10:35:22 +02:00
-permalink: /articles/182/building-high-performance-development-teams
+permalink: /articles/182/building-high-performance-development-teams/
 comments: true
 categories: 
 - Software-Entwicklung

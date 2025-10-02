@@ -2,7 +2,7 @@
 layout: post
 title: "Software Performance Testing: The Analysis part"
 date: 2010-04-06 17:44:49 +02:00
-permalink: /articles/156/software-performance-testing-the-analysis-part
+permalink: /articles/156/software-performance-testing-the-analysis-part/
 comments: true
 categories: 
 - software-testing

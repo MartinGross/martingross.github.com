@@ -2,7 +2,7 @@
 layout: post
 title: People who can code
 date: 2011-11-01 14:08:01 +01:00
-permalink: /articles/179/people-who-can-code
+permalink: /articles/179/people-who-can-code/
 comments: true
 categories: 
 - Software-Entwicklung

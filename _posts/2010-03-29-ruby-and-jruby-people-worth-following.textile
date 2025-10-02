@@ -2,7 +2,7 @@
 layout: post
 title: Ruby and JRuby people worth following
 date: 2010-03-29 19:43:28 +02:00
-permalink: /articles/154/ruby-and-jruby-people-worth-following
+permalink: /articles/154/ruby-and-jruby-people-worth-following/
 comments: true
 categories: 
 - JRuby

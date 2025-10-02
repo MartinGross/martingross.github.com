@@ -2,7 +2,7 @@
 layout: post
 title: VI Cheat Sheet
 date: 2008-06-27 17:05:00 +02:00
-permalink: /articles/120/vi-cheat-sheet
+permalink: /articles/120/vi-cheat-sheet/
 comments: true
 categories: 
 - Utilities

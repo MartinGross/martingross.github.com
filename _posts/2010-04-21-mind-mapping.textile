@@ -2,7 +2,7 @@
 layout: post
 title: Mind Mapping
 date: 2010-04-21 17:18:49 +02:00
-permalink: /articles/157/mind-mapping
+permalink: /articles/157/mind-mapping/
 comments: true
 categories: 
 - Usability

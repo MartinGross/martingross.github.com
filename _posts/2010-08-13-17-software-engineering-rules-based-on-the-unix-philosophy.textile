@@ -2,7 +2,7 @@
 layout: post
 title: 17 Software Engineering Rules based on the UNIX Philosophy
 date: 2010-08-13 17:06:37 +02:00
-permalink: /articles/169/17-software-engineering-rules-based-on-the-unix-philosophy
+permalink: /articles/169/17-software-engineering-rules-based-on-the-unix-philosophy/
 comments: true
 categories: 
 - Software-Entwicklung

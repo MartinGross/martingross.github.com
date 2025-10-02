@@ -2,7 +2,7 @@
 layout: post
 title: UML Notation auf einer Seite
 date: 2011-02-08 11:20:40 +01:00
-permalink: /articles/175/uml-notation-auf-einer-seite-erklaert
+permalink: /articles/175/uml-notation-auf-einer-seite-erklaert/
 comments: true
 categories: 
 - Software-Entwicklung

@@ -2,7 +2,7 @@
 layout: post
 title: FireBug Net Panel Explained
 date: 2010-05-05 16:53:33 +02:00
-permalink: /articles/159/firebug-net-panel-explained
+permalink: /articles/159/firebug-net-panel-explained/
 comments: true
 categories: 
 - performance-testing

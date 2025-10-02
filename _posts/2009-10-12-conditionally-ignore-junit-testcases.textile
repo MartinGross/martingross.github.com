@@ -2,7 +2,7 @@
 layout: post
 title: Conditionally ignore JUnit TestCases
 date: 2009-10-12 16:57:00 +02:00
-permalink: /articles/147/conditionally-ignore-junit-testcases
+permalink: /articles/147/conditionally-ignore-junit-testcases/
 comments: true
 categories: 
 - Java

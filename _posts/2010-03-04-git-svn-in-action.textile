@@ -2,7 +2,7 @@
 layout: post
 title: git-svn in action
 date: 2010-03-04 15:34:17 +01:00
-permalink: /articles/153/git-svn-in-action
+permalink: /articles/153/git-svn-in-action/
 comments: true
 categories: 
 - Software-Entwicklung

@@ -2,7 +2,7 @@
 layout: post
 title: "UMTS Internetfreigabe via Mac OS X 10.6 f\xC3\xBCr WIFI iPad "
 date: 2010-06-08 13:38:52 +02:00
-permalink: /articles/160/umts-internetfreigabe-via-mac-os-x-106-fuer-wifi-ipad
+permalink: /articles/160/umts-internetfreigabe-via-mac-os-x-106-fuer-wifi-ipad/
 comments: true
 categories: 
 - Web

@@ -2,7 +2,7 @@
 layout: post
 title: JRuby as an exceptions-as-flow-control detector
 date: 2011-06-18 12:40:18 +02:00
-permalink: /articles/176/jruby-as-an-exceptions-as-flow-control-detector
+permalink: /articles/176/jruby-as-an-exceptions-as-flow-control-detector/
 comments: true
 categories: 
 - JRuby

@@ -2,7 +2,7 @@
 layout: post
 title: "Performance Testing: Quick Tip: Handling very large log files"
 date: 2010-10-15 15:40:20 +02:00
-permalink: /articles/172/performance-testing-quick-tip-handling-very-large-log-files
+permalink: /articles/172/performance-testing-quick-tip-handling-very-large-log-files/
 comments: true
 categories: 
 - performance-testing

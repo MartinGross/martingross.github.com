@@ -2,7 +2,7 @@
 layout: post
 title: X.509 Certificate
 date: 2009-07-17 15:41:00 +02:00
-permalink: /articles/137/x509-certificate
+permalink: /articles/137/x509-certificate/
 comments: true
 categories: 
 - Web-Services

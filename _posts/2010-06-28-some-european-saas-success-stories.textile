@@ -2,7 +2,7 @@
 layout: post
 title: Some successful european SaaS startups
 date: 2010-06-28 19:13:32 +02:00
-permalink: /articles/165/some-european-saas-success-stories
+permalink: /articles/165/some-european-saas-success-stories/
 comments: true
 categories: 
 - Entrepreneur

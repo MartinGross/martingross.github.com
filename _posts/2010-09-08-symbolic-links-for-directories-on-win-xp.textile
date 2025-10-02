@@ -2,7 +2,7 @@
 layout: post
 title: Symbolic links for directories on Win XP
 date: 2010-09-08 13:51:52 +02:00
-permalink: /articles/170/symbolic-links-for-directories-on-win-xp
+permalink: /articles/170/symbolic-links-for-directories-on-win-xp/
 comments: true
 categories: 
 - Utilities

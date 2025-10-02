@@ -2,7 +2,7 @@
 layout: post
 title: Merging PDF files using free opensource software
 date: 2010-06-23 16:00:16 +02:00
-permalink: /articles/164/merging-pdf-files-using-free-opensource-software
+permalink: /articles/164/merging-pdf-files-using-free-opensource-software/
 comments: true
 categories: 
 - Utilities

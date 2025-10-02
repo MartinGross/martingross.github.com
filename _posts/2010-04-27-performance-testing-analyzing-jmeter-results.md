@@ -2,7 +2,7 @@
 layout: post
 title: "Performance Testing: Analyzing JMeter Results"
 date: 2010-04-27 18:41:16 +02:00
-permalink: /articles/158/performance-testing-analyzing-jmeter-results
+permalink: /articles/158/performance-testing-analyzing-jmeter-results/
 comments: true
 categories: 
 - performance-testing

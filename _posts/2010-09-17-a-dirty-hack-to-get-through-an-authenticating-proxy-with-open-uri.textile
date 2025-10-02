@@ -2,7 +2,7 @@
 layout: post
 title: A dirty hack to get through an authenticating proxy with open-uri
 date: 2010-09-17 14:51:53 +02:00
-permalink: /articles/171/a-dirty-hack-to-get-through-an-authenticating-proxy-with-open-uri
+permalink: /articles/171/a-dirty-hack-to-get-through-an-authenticating-proxy-with-open-uri/
 comments: true
 categories: 
 - JRuby

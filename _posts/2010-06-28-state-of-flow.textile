@@ -2,7 +2,7 @@
 layout: post
 title: State of Flow
 date: 2010-06-28 19:43:31 +02:00
-permalink: /articles/166/state-of-flow
+permalink: /articles/166/state-of-flow/
 comments: true
 categories: 
 - work

@@ -2,7 +2,7 @@
 layout: post
 title: "HTML5: Sectioning content elements "
 date: 2012-04-24 13:30:06 +02:00
-permalink: /articles/180/html5-sectioning-content-elements
+permalink: /articles/180/html5-sectioning-content-elements/
 comments: true
 categories: 
 - Web
