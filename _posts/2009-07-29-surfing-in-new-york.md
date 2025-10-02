@@ -5,13 +5,8 @@ title: Surfing in New York
 date: 2009-07-29 16:41:37 +02:00
 permalink: /articles/140/
 comments: true
-categories: 
+categories:
 - verschiedenes
 ---
 
-<object width="560" height="340">
-
-<param name="movie" value="http://www.youtube.com/v/_5N7iaPN8tM&hl=de&fs=1&rel=0">
-<param name="allowFullScreen" value="true">
-<param name="allowscriptaccess" value="always">
-<embed src="http://www.youtube.com/v/_5N7iaPN8tM&hl=de&fs=1&rel=0" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="560" height="340">`</object>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_5N7iaPN8tM?si=L2aOs1cO82zXoQNg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
