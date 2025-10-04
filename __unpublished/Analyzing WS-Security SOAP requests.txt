@@ -1,0 +1,233 @@
+Deconstructing encrypted and signed SOAP messages - Part 1
+
+Ever wondered how an encrypted and signed SOAP request looks alike?
+
+I saw quite a lot of them at work when I analyzed security compatibility issues between .NET clients and Java Webservices with Apache Axis2. 
+
+Here is a real request but with sensitive data removed:
+
+<?xml version='1.0' encoding='utf-8'?>
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:wsa="http://www.w3.org/2005/08/addressing" xmlns:xenc="http://www.w3.org/2001/04/xmlenc#">
+  <soapenv:Header>
+    <wsse:Security xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd" soapenv:mustUnderstand="1">
+      <xenc:EncryptedKey Id="EncKeyId-urn:uuid:07B356A4F98142A54513613288059762">
+        <xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-1_5" />
+        <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+          <wsse:SecurityTokenReference>
+            <wsse:KeyIdentifier EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary" ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509SubjectKeyIdentifier">aU53M6ufa/yIi/8Cf0SYnDqFNxg=</wsse:KeyIdentifier>
+          </wsse:SecurityTokenReference>
+        </ds:KeyInfo>
+        <xenc:CipherData>
+          <xenc:CipherValue>rCW...tms=</xenc:CipherValue>
+        </xenc:CipherData>
+        <xenc:ReferenceList>
+          <xenc:DataReference URI="#EncDataId-917483082" />
+        </xenc:ReferenceList>
+      </xenc:EncryptedKey>
+      <wsse:BinarySecurityToken xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary" ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3" wsu:Id="CertId-11497308">MII...3za</wsse:BinarySecurityToken>
+      <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Id="Signature-2113162951">
+        <ds:SignedInfo>
+          <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+          <ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+          <ds:Reference URI="#id-917483082">
+            <ds:Transforms>
+              <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+            </ds:Transforms>
+            <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+            <ds:DigestValue>mjnRJrB+7XLz3lQiAJ1doc17OJw=</ds:DigestValue>
+          </ds:Reference>
+        </ds:SignedInfo>
+        <ds:SignatureValue>H2e...h7uH1STc/o=</ds:SignatureValue>
+        <ds:KeyInfo Id="KeyId-1203935139">
+          <wsse:SecurityTokenReference xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="STRId-540941256">
+            <wsse:Reference URI="#CertId-11497308" ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3" />
+          </wsse:SecurityTokenReference>
+        </ds:KeyInfo>
+      </ds:Signature>
+    </wsse:Security>
+    <wsa:To>http://cool.sys.com/services/WebService_v0.3</wsa:To>
+    <wsa:MessageID>urn:uuid:C63E757221CBA561F61361328805225</wsa:MessageID>
+    <wsa:Action>urn:processdata</wsa:Action>
+  </soapenv:Header>
+  <soapenv:Body xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="id-917483082">
+    <xenc:EncryptedData Id="EncDataId-917483082" Type="http://www.w3.org/2001/04/xmlenc#Content">
+      <xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc" />
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <wsse:SecurityTokenReference xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+          <wsse:Reference URI="#EncKeyId-urn:uuid:07B356A4F98142A54513613288059762" />
+        </wsse:SecurityTokenReference>
+      </ds:KeyInfo>
+      <xenc:CipherData>
+        <xenc:CipherValue>PNpIO59dbpT...MlYAynP3p7wRxf9YItPQ==</xenc:CipherValue>
+      </xenc:CipherData>
+    </xenc:EncryptedData>
+  </soapenv:Body>
+</soapenv:Envelope>
+
+Looks quite complicated but if you understand the basics it will get easier. Most of this is defined by the WS-Security standard. http://www2.sys-con.com/itsg/virtualcd/dotnet/archives/0105/bristowe/index.html
+
+Let's have a look at the structure. For the moment I will ignore namespaces to keep things short and simple.
+
+The SOAP message has basically the following outer structure: 
+
+<Envelope>
+	<Header></Header>
+	<Body></Body>
+</Envelope>
+
+We have an envelope that contains a header and a body. All defined by the XML elements <Envelope>, <Header> and <Body>.
+
+The body contains the payload of the message. The header provides additonal data about the message.
+
+Most of the security things are defined in the SOAP header. We have the <wsse:Security> element there or <Security> if we ignore the namespace.
+
+We see three major parts inside of the Security header:
+
+* EncryptedKey
+* BinarySecurityToken
+* Signature
+
+A simplified view:
+
+    <wsse:Security ... soapenv:mustUnderstand="1">
+      <xenc:EncryptedKey Id="EncKeyId-urn:uuid:07B356A4F98142A54513613288059762">...</xenc:EncryptedKey>
+      <wsse:BinarySecurityToken ...>...</wsse:BinarySecurityToken>
+      <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Id="Signature-2113162951">...</ds:Signature>
+    </wsse:Security>
+
+The signature part is for signing parts of the message. 
+
+
+But let's have a look at the BinarySecurityToken element. What is it for?
+
+To understand what a BinarySecurityToken is we need to understand first what a Security Token is:
+
+	"A Security Token represents a collection of claims that might include a name, password, identity, key, certificate, group, privilege, and so on.""
+
+The WS-Security standard defines the BinarySecurityToken xml element: http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0.pdf
+
+The BinarySecurityToken element is just a security token that is binary and encoded to enclose it into the XML.The xml attribute ValueType defines the type of the token. It can have different types. In our case it is a X.509 certificate (http://en.wikipedia.org/wiki/X.509#Certificates) i.e. a certificate (or key) used by a public key infrastructure.  
+
+The encoding is described in the xml attribute EncodingType and describes the encoding format of the binary data. In our case it is base64.
+
+An example:
+
+<wsse:BinarySecurityToken 
+	xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" 
+	EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary" 
+	ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3" 
+	wsu:Id="CertId-11497308">MII...and a long number of characters and digits...3za
+</wsse:BinarySecurityToken>
+
+
+This means we have a X.509v3 certificate that was in binary format that is now encoded using base64 (http://en.wikipedia.org/wiki/Base64). 
+
+What does this mean? 
+It means you could take the long value between the start and end tag and decode it back to an binary X.509 certificate. Websites like http://www.opinionatedgeek.com/dotnet/tools/base64decode/ let you do this online without any hassle.
+
+Save the decoded xml as a file, add a file extension like '.cer' (or '.der') and voila you can use the tools of your operating system to look at the certificate details. I've done this several times and it helps you to see which certificate is used in the message.
+
+But for which part of the message is the certificate used then?
+
+I am glad you asked :) This is part of the next article.
+
+
+
+
+To be continued.
+
+In the next articles I will continue with the signature and the encrypted body of the message.
+
+
+Part 2
+
+Our BinarySecurityToken has an identifer 'CertId-11497308' that can be used referencing this token. And this is exactly what is done in the signature part of the header. If we search through the XML we find the KeyInfo having a reference to our BinarySecurityToken .
+
+      <ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Id="Signature-2113162951">
+        <ds:SignedInfo>
+          <ds:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+          <ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" />
+          <ds:Reference URI="#id-917483082">
+            <ds:Transforms>
+              <ds:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+            </ds:Transforms>
+            <ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+            <ds:DigestValue>mjnRJrB+7XLz3lQiAJ1doc17OJw=</ds:DigestValue>
+          </ds:Reference>
+        </ds:SignedInfo>
+        <ds:SignatureValue>H2e...h7uH1STc/o=</ds:SignatureValue>
+        <ds:KeyInfo Id="KeyId-1203935139">
+          <wsse:SecurityTokenReference xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="STRId-540941256">
+            <wsse:Reference URI="#CertId-11497308" ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509v3" />
+          </wsse:SecurityTokenReference>
+        </ds:KeyInfo>
+      </ds:Signature>
+
+And the signature has a reference to the SOAP body or to be more precise the signature references the identifier of the SOAP body <wsu:Id> . The X.509 certificate is somehow connected to the signature of body of the message.
+
+This makes sense. The sender uses his private key to sign a message. And we need the the public key of the sender to verify the signature. The public key of the sender is exactly what we have in the X.509 certificate. And the X.509 certificate is what was encoded in the BinarySecurityToken.
+
+How can we be sure that we really have the public key of the sender and not some other public key? 
+
+It is quite simple: Because the public key is signed by a certificate authority (CA) which we trust. Think of VeriSign for example. Or you could be the one that created the certificate and signed it (a self-signed certificate).
+
+Now the next thing to do is to decrypt the body. The body contains a <EncryptedData> part with a <KeyInfo> element:
+
+  <soapenv:Body xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" wsu:Id="id-917483082">
+    <xenc:EncryptedData Id="EncDataId-917483082" Type="http://www.w3.org/2001/04/xmlenc#Content">
+      <xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#aes128-cbc" />
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <wsse:SecurityTokenReference xmlns:wsse="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-secext-1.0.xsd">
+          <wsse:Reference URI="#EncKeyId-urn:uuid:07B356A4F98142A54513613288059762" />
+        </wsse:SecurityTokenReference>
+      </ds:KeyInfo>
+      <xenc:CipherData>
+        <xenc:CipherValue>PNpIO59dbpT...MlYAynP3p7wRxf9YItPQ==</xenc:CipherValue>
+      </xenc:CipherData>
+    </xenc:EncryptedData>
+  </soapenv:Body>
+
+And the KeyInfo references the EncryptedKey element of the header:
+
+      <xenc:EncryptedKey Id="EncKeyId-urn:uuid:07B356A4F98142A54513613288059762">
+        <xenc:EncryptionMethod Algorithm="http://www.w3.org/2001/04/xmlenc#rsa-1_5" />
+        <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+          <wsse:SecurityTokenReference>
+            <wsse:KeyIdentifier EncodingType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-soap-message-security-1.0#Base64Binary" ValueType="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-x509-token-profile-1.0#X509SubjectKeyIdentifier">aU53M6ufa/yIi/8Cf0SYnDqFNxg=</wsse:KeyIdentifier>
+          </wsse:SecurityTokenReference>
+        </ds:KeyInfo>
+        <xenc:CipherData>
+          <xenc:CipherValue>rCW...tms=</xenc:CipherValue>
+        </xenc:CipherData>
+        <xenc:ReferenceList>
+          <xenc:DataReference URI="#EncDataId-917483082" />
+        </xenc:ReferenceList>
+      </xenc:EncryptedKey>
+
+This could mean we should use the encrypted key for decrypting the body. What do you think?
+But how do we get the key for decrypting the body if the key itself is still encrypted?
+
+Good question!
+
+
+http://www.javaranch.com/journal/2008/10/web-service-security-encryption-axis2.html
+
+http://msdn.microsoft.com/en-us/library/ms977327.aspx
+
+http://www.soapui.org/SOAP-and-WSDL/applying-ws-security.html
+
+http://www.ibm.com/developerworks/java/library/j-jws5/index.html
+
+http://www.ibm.com/developerworks/webservices/tutorials/ws-understand-web-services4/
+
+http://publib.boulder.ibm.com/infocenter/wmbhelp/v8r0m0/index.jsp?topic=%2Fcom.ibm.etools.mft.samples.wssecsamp.doc%2Fdoc%2Fws_security_introduction.htm
+
+http://ws.apache.org/wss4j/best_practice.html
+
+http://msdn.microsoft.com/en-us/magazine/cc164158.aspx
+
+http://francoislascelles.sys-con.com/node/204424/
+
+http://en.wikipedia.org/wiki/WS-SecureConversation
+
+http://en.wikipedia.org/wiki/WS-Security

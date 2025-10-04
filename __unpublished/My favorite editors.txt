@@ -1,0 +1,17 @@
+My favorite editors
+
+they should be available for all the operating systems that I use: Mac OS X, Windows and Linux
+
+Different tasks, different editors:
+
+Viewing file contents
+
+Light-weight editing, script programming
+
+Programming larger systems
+
+Vim
+
+Sublime Text 2
+
+Intellij IDEA

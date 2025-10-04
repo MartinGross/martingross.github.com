@@ -1,0 +1,13 @@
+
+Why RSpec?
+
+Why JRuby?
+
+
+Converting Ruby types to Java types
+
+
+
+Calling a Java varargs method with JRuby
+
+Java implements varargs as an array. ... is syntactic sugar. Done by compiler. Ruby needs to provide a java array of 

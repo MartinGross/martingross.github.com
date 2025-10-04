@@ -1,0 +1,9 @@
+If something goes wrong:
+	
+	Check the fingerprints of the certificates: Is the client using the right ones? It should be the service public key for encrypting and the client private key for signing. Often the CA cert is used accidentally but should not be used nor for signing neither encrypting.
+	
+	Set org.apache.ws to debug level. WSS4J lib. Watch the logs.
+	
+	Check the error message the client receives and check exceptions and source at the corresponding line number. WSS4J lib
+	
+	

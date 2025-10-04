@@ -1,0 +1,17 @@
+Hallo Frau Wendler,
+
+
+
+
+*Sehr wichtig sind gute Kenntnisse und Erfahrungen in der Modellierung mittels XML/XSLT Schema und WSDL sowie eine ausgeprägte Kommunikations- und Kontaktfähigkeit*
+
+Wie sie meinem Profil entnehmen können, arbeite ich seit 12 Jahren im Bereich Web Services mit den Technologien XML, XSLT, XSD und WSDL. Zu meinen Aufgaben gehörte die Einführung, Modellierung und Programmierung von Webservices im Enterprise SOA Umfeld.
+
+In den letzten Jahren war ich in Aufgabenbereichen tätig, die qualitätssichernde, organisatorische und kommunikative Schwerpunkte für die Weiterentwicklung und den Betrieb einer Enterprise SOA/ESB hatten. Dabei war ich einer der Hauptansprechpartner für die Auftraggeber/Kunden und Bindeglied zu den Entwicklungsteams und betreute hier vor allem die Web Service Themen. Neben technischen Fragestellungen umfasste dies auch Projekt- und Solution Delivery Management. 
+
+Durch meine langjährige eigene Entwicklungstätigkeit im SOA und ESB Umfeld verfüge ich über ein tiefes technisches Verständnis der dazugehörigen Konzepte und Technologien inklusive Security und Kompatibilität. 
+
+*wichtig ist ein ausgeprägtes Hintergrundwissen im Bereich der Serviceorientierten Architektur (SOA)*
+*gute Kenntnisse der Konzepte und Technologien im Bereich SOA und ESB*,
+
+Lufthansa SOA, OpenAPI, Middleware, sowohl SOAP als auch REST basierend, 
