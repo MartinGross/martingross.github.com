@@ -2,7 +2,7 @@
 
 title: DATA ZOO
 locale: en_US
-url: "https//www.datazoo.de" # used in page head for the canonical header, RSS link and feed.xml
+url: "https://www.datazoo.de" # used in page head for the canonical header, RSS link and feed.xml
 # baseurl:          "/"   # indicates the root folder of your Jekyll site => used for internal links
 
 # Jekyll configuration
